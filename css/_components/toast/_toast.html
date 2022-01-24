@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  link
+  <title>Toast</title>
+</head>
+<body>
+  <div class="snackbar">
+    <p class="snackbar__content">Can't send photo. Retry in 5 seconds.</p>
+    <a class="snackbar__retry">RETRY</a>
+    <i class="fas fa-times snackbar__close"></i>
+  </div>
+  <p>Demo</p>
+  <div class="btn-wrapper">
+    <button id="baseline-btn">BASELINE</button>
+    <button id="leading-btn">LEADING</button>
+    <button id="stacked-btn">STACKED</button>
+  </div>
+
+  <div class="snackbar" id="baseline-snackbar">
+    <p class="snackbar__content">Can't send photo. Retry in 5 seconds.</p>
+    <a class="snackbar__retry">RETRY</a>
+    <i class="fas fa-times snackbar__close" id="baseline-snackbar_close-btn"></i>
+  </div>
+
+  <div class="snackbar" id="leading-snackbar">
+    <p class="snackbar__content">Your photo has been archived.</p>
+    <a class="snackbar__retry">UNDO</a>
+    <i class="fas fa-times snackbar__close" id="leading_close-btn"></i>
+  </div>
+
+  <div class="snackbar" id="stacked-snackbar">
+    <p class="snackbar__content">This item already has the label "travel". You can add a new label.</p>
+    <a class="snackbar__retry">ADD A NEW LABEL</a>
+    <i class="fas fa-times snackbar__close" id="stacked_close-btn"></i>
+  </div>
+
+  <script>
+    const baselineBtn = document.getElementById("baseline-btn");
+    const baselineCloseBtn = document.getElementById("baseline-snackbar_close-btn");
+    const leadingBtn = document.getElementById("leading-btn");
+    const leadingCloseBtn = document.getElementById("leading_close-btn");
+    const stackedBtn = document.getElementById("stacked-btn");
+    const stackedCloseBtn = document.getElementById("stacked_close-btn");
+
+    baselineBtn.addEventListener("click", () => {
+      document.getElementById("baseline-snackbar").style.display = "flex";
+    });
+
+    baselineCloseBtn.addEventListener("click", () => {
+      document.getElementById("baseline-snackbar").style.display = "none";
+    });
+
+    leadingBtn.addEventListener("click", () => {
+      document.getElementById("leading-snackbar").style.display = "flex";
+    });
+
+    leadingCloseBtn.addEventListener("click", () => {
+      document.getElementById("leading-snackbar").style.display = "none";
+    });
+
+    stackedBtn.addEventListener("click", () => {
+      document.getElementById("stacked-snackbar").style.display = "flex";
+    });
+
+    stackedCloseBtn.addEventListener("click", () => {
+      document.getElementById("stacked-snackbar").style.display = "none";
+    });
+  </script>
+</body>
+</html>

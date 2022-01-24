@@ -1,0 +1,89 @@
+/* FONT FAMILY AVAILABLE */
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.space-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+.staatliches{
+  font-family: 'Staatliches', cursive;
+}
+
+/* FONT SIZES AVAILABLE */
+.xxl3{
+  font-size: 8rem;
+}
+
+.xxl2{
+  font-size: 6.5rem;
+}
+
+.xxl{
+  font-size: 5rem;
+}
+
+.xl3{
+  font-size: 4.5rem;
+}
+
+.xl2{
+  font-size: 4rem;
+}
+
+.xl{
+  font-size: 3.75rem;
+}
+
+.lg3{
+  font-size: 3.5rem;
+}
+
+.lg2{
+  font-size: 3.25rem;
+}
+
+.lg{
+  font-size: 3rem;
+}
+
+.md3{
+  font-size: 2.75rem;
+}
+
+.md2{
+  font-size: 2.5rem;
+}
+
+.md{
+  font-size: 2.25rem;
+}
+
+.sm3{
+  font-size: 2rem;
+}
+
+.sm2{
+  font-size: 1.75rem;
+}
+
+.sm{
+  font-size: 1.5rem;
+}
+
+.xs3{
+  font-size: 1.25rem;
+}
+
+.xs2{
+  font-size: 1rem;
+}
+
+.xs{
+  font-size: 0.75rem;
+}

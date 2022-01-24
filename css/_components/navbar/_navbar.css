@@ -1,0 +1,68 @@
+header {
+  align-items: center;
+  background-color: #6200ee;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  width: 80%;
+}
+
+header > i {
+  border-radius: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+header > i:hover {
+  background-color: rgba(256, 256, 256, 0.1);
+}
+
+header > i:nth-child(3) {
+  margin-left: auto;
+}
+
+header > span {
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* || SHORT */
+
+/* header > i:nth-child(3),
+i:nth-child(4) {
+  display: none;
+}
+
+header > i:nth-child(5) {
+  margin-left: auto;
+} */
+
+/* || SHORT ALWAYS COLLAPSED */
+
+/* header > span:nth-child(2),
+i:nth-child(3),
+i:nth-child(4) {
+  display: none;
+}
+
+header {
+  border-bottom-right-radius: 30px;
+  width: auto;
+} */
+
+/* || PROMINENT */
+
+/* header {
+  align-items: flex-start;
+  height: 7rem;
+}
+
+header > span {
+  align-self: flex-end;
+}
+ */

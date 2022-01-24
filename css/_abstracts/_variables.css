@@ -1,0 +1,18 @@
+:root{
+  --danger: #EF4444;
+  --danger-dark: #951616;
+  --danger-light: #FFAEAF;
+  --dark: #263238;
+  --info: #FDE047;
+  --info-dark: #A7942E;
+  --info-light: #FBFF8A;
+  --light: #E9F3FD;
+  --primary: #38BDF8;
+  --primary-light: #C4F2FF;
+  --secondary:  #075985;
+  --success: #6BEA7F;
+  --success-dark: #48A056;
+  --success-light: #A9EEB4;
+  --tertiary: #979797;
+  --tertiary-light: #E1E3E2;
+}

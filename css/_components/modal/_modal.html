@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../_main.css">
+  <title>Modal</title>
+</head>
+<body>
+  <button id="alert_dialog_btn">OPEN ALERT DIALOG</button>
+  <button id="simple_dialog_btn">OPEN SIMPLE DIALOG</button>
+  <button id="confirmation_dialog_btn">OPEN CONFIRMATION DIALOG</button>
+
+  <div class="dialog__container" id="dialog_container">
+    <section class="dialog alert" id="alert_dialog">
+      <div class="dialog__title">
+        <h1>Dialog header</h1>
+        <p>Dialog body text</p>
+      </div>
+      <footer class="dialog__footer">
+        <a>ACTION 1</a>
+        <a>ACTION 2</a>
+      </footer>
+    </section>
+
+    <section class="dialog simple" id="simple_dialog">
+      <div class="dialog__title">
+        <h1>Dialog header</h1>
+      </div>
+      <footer class="dialog__content">
+        <ul>
+          <li>
+            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <span>Item 1</span>
+          </li>
+          <li>
+            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <span>Item 2</span>
+          </li>
+          <li>
+            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <span>Item 3</span>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <section class="dialog confirmation" id="confirmation_dialog">
+      <div class="dialog__title">
+        <h1>Dialog header</h1>
+      </div>
+      <main>
+        <ul>
+          <li><input type="radio"><span>Item 1</span></li>
+          <li><input type="radio"><span>Item 2</span></li>
+          <li><input type="radio"><span>Item 3</span></li>
+          <li><input type="radio"><span>Item 4</span></li>
+        </ul>
+      </main>
+      <footer class="dialog__footer">
+        <a>ACTION 1</a>
+        <a>ACTION 2</a>
+      </footer>
+    </section>
+  </div>
+</body>
+</html>

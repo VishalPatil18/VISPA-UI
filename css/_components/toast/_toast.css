@@ -1,0 +1,101 @@
+.snackbar {
+  background-color: #333333;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.snackbar__content {
+  flex-shrink: 1;
+}
+
+.snackbar__retry,
+snackbar__close {
+  flex-shrink: 0;
+}
+
+.snackbar__retry {
+  color: #bb86fc;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0px 1.5rem;
+  cursor: pointer;
+}
+
+.snackbar__close {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 100rem;
+  cursor: pointer;
+}
+
+.snackbar__close:hover {
+  background-color: rgba(256, 256, 256, 0.1);
+}
+
+.btn-wrapper {
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.btn-wrapper > button {
+  height: 40px;
+  padding: 0.7rem 1.3rem;
+  background-color: #6200ee;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.snackbar-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#baseline-snackbar {
+  display: none;
+  width: 400px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#leading-snackbar {
+  display: none;
+  width: 400px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#stacked-snackbar {
+  display: none;
+  width: 90%;
+  max-width: 440px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+#stacked-snackbar > p {
+  font-size: 0.9rem;
+  flex-basis: 100%;
+  padding: 0.8rem 0rem;
+}
