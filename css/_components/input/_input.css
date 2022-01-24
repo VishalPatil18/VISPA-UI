@@ -1,0 +1,115 @@
+.input {
+  color: var(--dark);
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin: 0 20px 10px;
+  width: 80%;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.input__field--text {
+  background-color: var(--light);
+  border: 1px solid var(--tertiary);
+  float: left;
+  font-size: 0.8rem;
+  margin: 5px 0;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.input .input__field--text:focus{
+  border: 1px solid var(--dark)
+}
+
+.inp__error .input__label{
+  color: var(--danger);
+}
+
+.inp__error .input__field--text{
+  border: 1px solid var(--danger);
+}
+
+.inp__error .input__field--text:focus{
+  border: 1px solid var(--danger);
+}
+
+.inp__error--msg {
+  color: var(--danger);
+}
+
+.input__field--radio, .input__field--checkbox {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.radio .disabled, .checkbox .disabled{
+  color: var(--tertiary);
+}
+
+.radio .disabled__input, .checkbox .disabled__input{
+  cursor: not-allowed;
+}
+
+.input__icons .input__field--text {
+  background-position: 10px 10px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+
+.email {
+  background-image: url('../../../assests/envelope.svg');
+}
+
+.password {
+  background-image: url('../../../assests/lock.svg');
+}
+
+.search {
+  background-image: url('../../../assests/search.svg');
+}
+
+.user {
+  background-image: url('../../../assests/user.svg');
+}
+
+.input__premium .input__field--text {
+  background-color: white;
+  border: 1px solid var(--primary);
+  border-radius: 100rem;
+}
+
+.input__username, .input__email, .input__password {
+  position: relative;
+}
+
+.input__username .input__label,
+.input__email .input__label,
+.input__password .input__label {
+  position: absolute;
+  background-color: white;
+  color: var(--primary);
+  font-size: 10px;
+  padding: 0px 5px;
+  margin: 0px 10px;
+}
+
+.input__username .input__label {
+  top: -5px;
+  left: 20px;
+}
+
+.input__email .input__label {
+  bottom: -65px;
+  left: 20px;
+}
+
+.input__password .input__label {
+  bottom: -112px;
+  left: 20px;
+}
