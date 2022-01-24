@@ -1,4 +1,4 @@
-body {
+/* body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -83,11 +83,11 @@ body > button:hover {
   display: none;  
   position: fixed;
   
-}
+} */
 
 /* || SIMPLE */
 
-.simple {
+/* .simple {
   display: none;
 }
 
@@ -124,11 +124,11 @@ body > button:hover {
 
 .dialog__content span {
   margin-left: 15px;
-}
+} */
 
 /* || CONFIRMATION */
 
-.confirmation {
+/* .confirmation {
   display: none;
 } 
 
@@ -138,4 +138,4 @@ body > button:hover {
 
 .confirmation .dialog__footer{
   border-top: 1px solid gray;
-}
+} */

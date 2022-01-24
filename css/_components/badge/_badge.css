@@ -1,0 +1,45 @@
+.badge__container {
+  position: relative;
+}
+
+.badge {
+  border-radius: 100rem;
+  font-size: 0.8rem;
+  padding: 2.5px 8px;
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -15px;
+}
+
+.badge__profile {
+  border: 2px solid white;
+  bottom: 0;
+  height: 18px;
+  padding: 0px;
+  right: 3px;
+  top: initial;
+  width: 18px;
+}
+
+.bdg--danger {
+  background-color: var(--danger);
+  color: var(--light)
+}
+
+.bdg--success {
+  background-color: var(--success);
+}
+
+.bdg--primary {
+  background-color: var(--primary);
+}
+
+.bdg--info {
+  background-color: var(--info);
+}
+
+.bdg--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}

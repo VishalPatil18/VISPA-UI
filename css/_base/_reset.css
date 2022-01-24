@@ -27,13 +27,14 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html, html:focus-within {
   scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }

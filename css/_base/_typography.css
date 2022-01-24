@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Space+Mono:wght@400;700&family=Staatliches&display=swap');
+
 /* FONT FAMILY AVAILABLE */
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 .source-sans-pro {
-  font-family: 'Source Sans Pro', sans-serif; 
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .space-mono {
@@ -86,4 +92,16 @@
 
 .xs{
   font-size: 0.75rem;
+}
+
+.xxs3{
+  font-size: 0.6rem;
+}
+
+.xxs2{
+  font-size: 0.5rem;
+}
+
+.xxs{
+  font-size: 0.35rem;
 }

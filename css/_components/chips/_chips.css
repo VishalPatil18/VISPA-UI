@@ -1,53 +1,68 @@
-.chips__wrapper {
-  align-items: center;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-width: 200px;
-  padding: 2rem;
-  width: 90%;
-}
-
 .chip {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--tertiary-light);
   border-radius: 100rem;
   cursor: default;
   display: flex;
   font-size: 0.9rem;
   justify-content: center;
   margin: 4px 8px;
-  padding: 0.5rem;
+  padding: 0.4rem 0.8rem;
   width: fit-content;
 }
 
-.chip > i {
-  color: gray;
+.chip__icon {
   cursor: pointer;
-  font-size: 1rem;
   margin-left: 5px;
 }
 
 .chip:hover {
-  background-color: rgba(0, 0, 0, 0.2); 
+  background-color: var(--tertiary);
 }
 
-input {
-  border: none;
-  border-radius: 100rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  font-size: 1rem;
-  padding: 1rem 2rem;
+.ch--primary {
+  background-color: var(--primary);
 }
 
-input::placeholder {
-  color: red;
-  font-size: 1rem;
-  text-align: center;
+.ch--primary:hover {
+  background-color: var(--secondary);
+  color: var(--light);
 }
 
-input:focus {
-  outline: none;
+.ch--success {
+  background-color: var(--success);
+}
+
+.ch--success:hover {
+  background-color: var(--success-dark);
+  color: var(--light);
+}
+
+.ch--danger {
+  background-color: var(--danger);
+  color: var(--light);
+}
+
+.ch--danger:hover {
+  background-color: var(--danger-dark);
+  color: var(--light);
+}
+
+.ch--info {
+  background-color: var(--info);
+}
+
+.ch--info:hover {
+  background-color: var(--info-dark);
+  color: var(--light);
+}
+
+.ch--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.ch--dark:hover {
+  background-color: var(--tertiary-light);
+  color: var(--dark);
 }

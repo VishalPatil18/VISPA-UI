@@ -1,4 +1,4 @@
-.snackbar {
+/* .snackbar {
   background-color: #333333;
   color: white;
   font-size: 0.85rem;
@@ -14,8 +14,7 @@
   flex-shrink: 1;
 }
 
-.snackbar__retry,
-snackbar__close {
+.snackbar__retry, .snackbar__close {
   flex-shrink: 0;
 }
 
@@ -98,4 +97,4 @@ snackbar__close {
   font-size: 0.9rem;
   flex-basis: 100%;
   padding: 0.8rem 0rem;
-}
+} */

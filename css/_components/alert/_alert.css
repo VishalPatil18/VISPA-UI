@@ -1,24 +1,23 @@
-.alert{
+.alert {
   align-items: center;
   color: var(--dark);
   display: flex;
-  margin: auto;
-  margin-top: 1rem;
-  padding: 2rem;
-  width: 80%;
+  margin: 1rem;
+  padding: 1.3rem;
+  width: min(500px, 90%);
 }
 
-.alert > img{
+.alert__icon {
   height: 15px;
   width: 15px;
 }
 
-img:nth-child(1){
-  margin-right: 10px;
+.alert__icon--right {
+  margin-left: auto;
 }
 
-img:nth-child(2){
-  margin-left: auto;
+.alert__text {
+  margin: 0px 10px;
 }
 
 .danger {

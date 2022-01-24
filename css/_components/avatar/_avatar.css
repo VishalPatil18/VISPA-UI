@@ -1,145 +1,24 @@
-.wrapper {
-  background-color: white;
-  border: 1px solid #333;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  justify-content: space-evenly;
-  padding: 2rem;
-  width: 400px;
-}
-
-/* || TEXT WITH BADGE */
-
-.text-with-badge {
-  position: relative;
-}
-
-.text-with-badge > span {
-  align-items: center;
-  background-color: #3f51b5;
+.avatar {
   border-radius: 100rem;
-  color: white;
-  display: flex;
-  font-size: 13px;
-  font-weight: 500;
-  height: 22px;
-  justify-content: center;
-  left: 125px;
-  position: absolute;
-  top: -10px;
-  width: 22px;
+  height: 60px;
+  width: 60px;
 }
 
-/* || TEXT WITH LARGE BADGE */
-
-.text-with-large-badge > span {
-  font-size: 24px;
-  height: 30px;
-  left: 115px;
-  top: -15px;
-  width: 30px;
+.avatar--sm {
+  height: 40px;
+  width: 40px;
 }
 
-/* || BUTTON WITH A BADGE ON LEFT */
-
-.button-with-left-badge {
-  align-items: center;
-  display: flex;
-  position: relative;
+.avatar--md {
+  height: 60px;
+  width: 60px;
 }
 
-.button-with-left-badge > button {
-  background-color: #3f51b5;
-  border: none;
+.avatar--lg {
+  height: 80px;
+  width: 80px;
+}
+
+.avatar--square {
   border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin-left: 5px;
-  padding: 0.5rem 1rem;
-}
-
-.button-with-left-badge > span {
-  align-items: center;
-  background-color: #ff4081;
-  border-radius: 100rem;
-  color: white;
-  display: flex;
-  font-size: 0.8rem;
-  height: 22px;
-  justify-content: center;
-  position: absolute;
-  right: 100px;
-  top: -10px;
-  width: 22px;
-}
-
-/* || BUTTON TOGGLES BADGE VISIBILITY */
-
-.button-toggles-badge-visibility {
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
-.button-toggles-badge-visibility > button {
-  border: none;
-  border-radius: 5px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-left: 5px;
-  padding: 0.5rem 1rem;
-}
-
-.button-toggles-badge-visibility > span {
-  align-items: center;
-  background-color: #3f51b5;
-  border-radius: 100rem;
-  color: white;
-  display: flex;
-  font-size: 0.8rem;
-  font-weight: 500;
-  height: 22px;
-  justify-content: center;
-  position: absolute;
-  right: 45px;
-  top: -10px;
-  width: 22px;
-}
-
-/* || ICON WITH A BADGE */
-
-.icon-with-badge {
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
-.icon-with-badge > i {
-  font-size: 25px;
-  margin-left: 10px;
-}
-
-.icon-with-badge > span {
-  align-items: center;
-  background-color: red;
-  border-radius: 100rem;
-  color: white;
-  display: flex;
-  font-size: 0.8rem;
-  font-weight: 900;
-  height: 22px;
-  justify-content: center;
-  position: absolute;
-  right: 162px;
-  top: -10px;
-  width: 22px;
 }

@@ -4,49 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../_main.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="../../main.css">
+  <title>Chips</title>
 </head>
-<body>
-  <main class="chips__wrapper" id="chips__wrapper"></main>
-  <input type="text" placeholder="New Chip" id="chip-input">
+<body class="poppins">
+  <!-- BASIC -->
+  <span draggable="true" class="chip">
+    basic
+  </span>
 
-  <script>
-    const chipInputEl = document.getElementById("chip-input");
-    const chipWrapperEl = document.getElementById("chips__wrapper");
+  <span draggable="true" class="chip ch--primary">
+    primary
+  </span>
 
-    let chipItems = [];
+  <span draggable="true" class="chip ch--success">
+    success
+  </span>
 
-    const createChips = (chipItems) => {
-      chipWrapperEl.innerHTML = "";
-      chipItems.map((chip) => {
-        chipWrapperEl.innerHTML += 
-        `
-          <span draggable="true" class="chip">
-            ${chip}
-            <i class="fas fa-times-circle" onclick="removeChip()"></i>
-          </span>
-        `
-      });
-    }
+  <span draggable="true" class="chip ch--danger">
+    danger
+  </span>
 
-    createChips(chipItems);
+  <span draggable="true" class="chip ch--info">
+    info
+  </span>
 
-    chipInputEl.addEventListener("keydown", (e) => {
-      let newChipInput = chipInputEl.value;
-      // console.log(e.key);
-      if(e.key === "Enter" && newChipInput !== ""){
-        chipItems.push(newChipInput);
-        // console.log(newChipInput);
-        createChips(chipItems);
-        chipInputEl.value = "";
-      }
-    });
+  <span draggable="true" class="chip ch--dark">
+    dark
+  </span>
 
-    const removeChip = () => {
-      // console.log(event.target);
-      chipWrapperEl.removeChild(event.target.parentNode);
-    }
-  </script>
+  <!-- W/CLOSE -->
+  <span draggable="true" class="chip ch--info">
+    mango
+    <img class="icon--sm chip__icon" src="../../../assests/close.svg" alt="close-btn">
+  </span>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.drawer {
+/* .drawer {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   box-sizing: border-box;
@@ -156,7 +156,7 @@ ol {
   position: relative;
 }
 
-/* .modal_wrapper {
+.modal_wrapper {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100vh;
   left: 0;
