@@ -1,100 +1,170 @@
-/* .snackbar {
-  background-color: #333333;
-  color: white;
+.toast {
+  align-items: center;
+  background-color: white;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  display: flex;
   font-size: 0.85rem;
   font-weight: 300;
-  padding: 0.4rem 1rem;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.snackbar__content {
-  flex-shrink: 1;
-}
-
-.snackbar__retry, .snackbar__close {
-  flex-shrink: 0;
-}
-
-.snackbar__retry {
-  color: #bb86fc;
-  font-weight: 400;
-  font-size: 0.9rem;
-  padding: 0px 1.5rem;
-  cursor: pointer;
-}
-
-.snackbar__close {
-  font-size: 1.2rem;
-  padding: 0.5rem 0.7rem;
-  border-radius: 100rem;
-  cursor: pointer;
-}
-
-.snackbar__close:hover {
-  background-color: rgba(256, 256, 256, 0.1);
-}
-
-.btn-wrapper {
-  width: 400px;
-  height: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-}
-
-.btn-wrapper > button {
-  height: 40px;
-  padding: 0.7rem 1.3rem;
-  background-color: #6200ee;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-
-.snackbar-wrapper {
   position: relative;
+  width: min(600px, 90%);
+}
+
+.toast__content {
+  flex-shrink: 1;
+  margin-left: 10px;
+}
+
+.toast__icon {
+  padding: 2rem;
+  box-sizing: content-box;
+}
+
+.toast__close {
+  margin: 0px 15px;
+  box-sizing: content-box;
+}
+
+.toast__button, .toast__close {
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 2rem 0.5rem;
+}
+
+.toast__icon--btn {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.toast__button {
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: auto;
+}
+
+.toast-wrapper {
+  position: relative;
+}
+
+/* BASIC */
+.toast__basic {
+  justify-content: center;
+  background-color: var(--light);
+}
+
+.toast__basic .toast__content{
+  justify-content: center;
+  padding: 2rem;
+  margin-left: 0px;
+}
+
+/* INPUT */
+.toast__input .toast__content--input{
   width: 100%;
 }
 
-#baseline-snackbar {
-  display: none;
-  width: 400px;
-  position: absolute;
-  bottom: 10px;
+.toast__input .toast__close {
+  margin-left: auto;
 }
 
-#leading-snackbar {
-  display: none;
-  width: 400px;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+/* STACKED */
+.toast__stacked {
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-#stacked-snackbar {
-  display: none;
-  width: 90%;
-  max-width: 440px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  bottom: 10px;
-}
-
-#stacked-snackbar > p {
+.toast__stacked .toast__content {
   font-size: 0.9rem;
   flex-basis: 100%;
-  padding: 0.8rem 0rem;
-} */
+  padding: 1rem;
+}
+
+.toast__button--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.toast__stacked .toast__content {
+  margin-left: 0;
+}
+
+.toast__button--wrapper .toast__button {
+  margin-left: 0px;
+  padding: 0.5rem 1rem;
+}
+
+.toast__button--wrapper .toast__button:hover {
+  background-color: var(--tertiary);
+}
+
+/* DANGER */
+.tst--danger {
+  border: 1px solid var(--danger);
+}
+
+.tst--danger .toast__icon {
+  background-color: var(--danger);
+}
+
+.tst--danger .toast__button {
+  color: var(--danger);
+}
+
+.tst--danger .toast__button--wrapper .toast__button:hover {
+  background-color: var(--danger-light);
+}
+
+/* SUCCESS */
+.tst--success {
+  border: 1px solid var(--success-dark);
+}
+
+.tst--success .toast__icon {
+  background-color: var(--success);
+}
+
+.tst--success .toast__button {
+  color: var(--success-dark);
+}
+
+.tst--success .toast__button--wrapper .toast__button:hover {
+  background-color: var(--success-light);
+}
+
+/* PRIMARY */
+.tst--primary {
+  border: 1px solid var(--primary);
+}
+
+.tst--primary .toast__icon {
+  background-color: var(--primary);
+}
+
+.tst--primary .toast__button {
+  color: var(--primary);
+}
+
+.tst--primary .toast__button--wrapper .toast__button:hover {
+  background-color: var(--primary-light);
+}
+
+/* INFO */
+.tst--info {
+  border: 1px solid var(--info);
+}
+
+.tst--info .toast__icon {
+  background-color: var(--info);
+}
+
+.tst--info .toast__button {
+  color: var(--info-dark);
+}
+
+.tst--info .toast__button--wrapper .toast__button:hover {
+  background-color: var(--info-light);
+}

@@ -4,16 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../_main.css">
+  <link rel="stylesheet" href="../../main.css">
   <title>Navbar</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100vw;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <i class="fas fa-bars"></i>
-    <span>San Francisco, CA</span>
-    <i class="fas fa-download"></i>
-    <i class="fas fa-print"></i>
-    <i class="fas fa-bookmark"></i>
+<body class="poppins">
+  <!-- BASIC -->
+  <header class="navbar">
+    <img class="icon--lg" src="../../../assests/linux.svg" alt="logo">
+    <span class="navbar__text">LINUX</span>
+    <ul class="navbar__list">
+      <li class="navbar__btn">Home</li>
+      <li class="navbar__btn">About</li>
+      <li class="navbar__btn">Blogs</li>
+      <li class="navbar__btn">Contact</li>
+      <li class="navbar__btn">Feedback</li>
+    </ul>
+    <div class="input input__icons navbar__search">
+      <input class="input__field--text search" type="text" placeholder="Search...">
+    </div>
+  </header>
+
+  <!-- W/ICONS -->
+  <header class="navbar nb__icons">
+    <img class="icon--lg" src="../../../assests/linux.svg" alt="logo">
+    <span class="navbar__text">LINUX</span>
+    <div class="input input__icons navbar__search">
+      <input class="input__field--text search" type="text" placeholder="Search...">
+    </div>
+    <ul class="navbar__list">
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/home.svg" alt="home-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/flag.svg" alt="flag-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/video.svg" alt="video-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/shopping-bag.svg" alt="cart-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/users.svg" alt="users-btn"></li>
+    </ul>
+    <ul class="navbar__list">
+      <li class="navbar__btn navbar__user"><img class="profile__img icon--md" src="../../../assests/profile_dark.png" alt="profile">Bablu</li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/plus-circle.svg" alt="add-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/comments.svg" alt="chats-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/bell.svg" alt="noti-btn"></li>
+      <li class="navbar__btn"><img class="icon--md" src="../../../assests/arrow-alt-circle-down.svg" alt="menu"></li>
+    </ul>
   </header>
 </body>
 </html>

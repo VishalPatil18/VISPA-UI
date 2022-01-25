@@ -3,8 +3,8 @@
   color: var(--dark);
   display: flex;
   margin: 1rem;
-  padding: 1.3rem;
-  width: min(500px, 90%);
+  padding: 0.7rem;
+  width: min(400px, 90%);
 }
 
 .alert__icon {
@@ -22,31 +22,31 @@
 
 .danger {
   background-color: var(--danger-light);
-  border: 2px solid var(--danger);
+  border: 1px solid var(--danger);
 }
 
 .dark {
   color: var(--light);
   background-color: var(--dark);
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .info {
   background-color: var(--tertiary-light);
-  border: 2px solid var(--tertiary); 
+  border: 1px solid var(--tertiary); 
 }
 
 .primary {
   background-color: var(--primary-light);
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .success {
   background-color: var(--success-light);
-  border: 2px solid var(--success-dark);
+  border: 1px solid var(--success-dark);
 }
 
 .warning {
   background-color: var(--info-light);
-  border: 2px solid var(--info-dark); 
+  border: 1px solid var(--info-dark); 
 }
