@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../_main.css">
+  <link rel="stylesheet" href="../../main.css">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 200vh;
+    }
+  </style>
   <title>Modal</title>
 </head>
 <body>
-  <button id="alert_dialog_btn">OPEN ALERT DIALOG</button>
+  <button class="button btn-primary" id="alert_dialog_btn">OPEN ALERT DIALOG</button>
   <button id="simple_dialog_btn">OPEN SIMPLE DIALOG</button>
   <button id="confirmation_dialog_btn">OPEN CONFIRMATION DIALOG</button>
 
@@ -31,15 +40,15 @@
       <footer class="dialog__content">
         <ul>
           <li>
-            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <img class="user_img icon--md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
             <span>Item 1</span>
           </li>
           <li>
-            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <img class="user_img icon--md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
             <span>Item 2</span>
           </li>
           <li>
-            <img class="user_img" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
+            <img class="user_img icon--md" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"/>
             <span>Item 3</span>
           </li>
         </ul>
@@ -64,5 +73,41 @@
       </footer>
     </section>
   </div>
+
+  <script>
+    const alertDialogBtn = document.getElementById("alert_dialog_btn");
+    const simpleDialogBtn = document.getElementById("simple_dialog_btn");
+    const confirmationDialogBtn = document.getElementById("confirmation_dialog_btn")
+    const dialogContainer = document.getElementById("dialog_container");
+    const alertDialogEl = document.getElementById("alert_dialog");
+    const simpleDialogEl = document.getElementById("simple_dialog");
+    const confirmationDialogEl = document.getElementById("confirmation_dialog");
+  
+    alertDialogBtn.addEventListener("click", () => {
+      dialogContainer.style.display = "flex";
+      alertDialogEl.style.display = "flex";
+    });
+  
+    simpleDialogBtn.addEventListener("click", () => {
+      dialogContainer.style.display = "flex";
+      simpleDialogEl.style.display = "flex";
+    });
+  
+    confirmationDialogBtn.addEventListener("click", () => {
+      dialogContainer.style.display = "flex";
+      confirmationDialogEl.style.display = "flex";
+    });
+  
+    window.addEventListener("click", e => {
+      if (e.target == dialogContainer) {
+        dialogContainer.style.display = "none";
+        confirmationDialogEl.style.display = "none";
+        simpleDialogEl.style.display = "none";
+        alertDialogEl.style.display = "none";
+      }
+    });
+  </script>
 </body>
+
+
 </html>
