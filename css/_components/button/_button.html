@@ -13,26 +13,82 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      height: 200vh;
     }
   </style>
 </head>
-<body>
+<body class="poppins">
   <!-- BASIC -->
-  <button class="button btn-primary">Basic</button>
+  <button class="button">Button</button>
+
+  <!-- SIZES -->
+  <button class="button btn-sm">Small</button>
+  <button class="button btn-md">Medium</button>
+  <button class="button btn-lg">Large</button>
+  
+  <!-- OUTLINE -->
+  <button class="button btn-primary">Outline</button>
 
   <!-- SOLID -->
   <button class="button btn-solid-primary">Solid</button>
 
   <!-- ROUND -->
-  <button class="button btn-round btn-success">Round</button>
+  <button class="button btn-round btn-solid-primary">Round</button>
 
-  <!-- PREMIUM -->
-  <button class="button btn-dark btn-premium">Premium</button>
 
   <!-- BUTTON W/ICON -->
-  <button class="button btn-icon btn-info">
-    <img class="icon--md" src="../../../assests/envelope.svg" alt="">
-    Messages
+  <button class="button btn-w-icon btn-primary">
+    <img class="icon-primary icon--md button__icon" src="../../../assets/envelope.svg" alt="message-btn">
+    W/Icon
   </button>
+
+  <button class="button btn-w-icon btn-solid-primary">
+    <img class="icon-light icon--md button__icon" src="../../../assets/envelope.svg" alt="message-btn">
+    W/Icon
+  </button>
+
+  <!-- SOCIAL MEDIA -->
+  <button class="button btn-socialmedia btn-solid-primary"><img class="icon-light icon--md button__icon" src="../../../assets/twitter.svg" alt="twitter"></button>
+
+  <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon--md button__icon" src="../../../assets/facebook.svg" alt="facebook"></button>
+
+  <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon--md button__icon" src="../../../assets/instagram.svg" alt="instagram"></button>
+
+  <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon--md button__icon" src="../../../assets/linkedin.svg" alt="linkedin"></button>
+
+  <button class="button btn-socialmedia btn-solid-dark"><img class="icon-light icon--md button__icon" src="../../../assets/medium.svg" alt="medium"></button>
+
+  <button class="button btn-socialmedia btn-solid-dark"><img class="icon-light icon--md button__icon" src="../../../assets/github.svg" alt="github"></button>
+
+  <!-- PRIMARY -->
+  <button class="button btn-primary">Primary Outline</button>
+
+  <button class="button btn-solid-primary">Primary Solid</button>
+
+  <!-- SECONDARY -->
+  <button class="button btn-secondary">Secondary Outline</button>
+
+  <button class="button btn-solid-secondary">Secondary Solid</button>
+
+  <!-- SUCCESS -->
+  <button class="button btn-success">Success Outline</button>
+
+  <button class="button btn-solid-success">Success Solid</button>
+
+  <!-- DANGER -->
+  <button class="button btn-danger">Danger Outline</button>
+
+  <button class="button btn-solid-danger">Danger Solid</button>
+
+  <!-- INFO -->
+  <button class="button btn-info">Info Outline</button>
+
+  <button class="button btn-solid-info">Info Solid</button>
+
+  <!-- DARK -->
+  <button class="button btn-dark">Dark Outline</button>
+
+  <button class="button btn-solid-dark">Dark Solid</button>
+
 </body>
 </html>

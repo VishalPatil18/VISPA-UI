@@ -14,44 +14,26 @@
   width: 30px;
 }
 
-/* BOX SHADOW */
-.sdw-light {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.icon-light {
+  filter: invert(100%) sepia(1%) saturate(352%) hue-rotate(19deg) brightness(112%) contrast(100%);
 }
 
-.sdw-medium {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.icon-primary {
+  filter: invert(61%) sepia(64%) saturate(3429%) hue-rotate(173deg) brightness(97%) contrast(93%);
 }
 
-.sdw-heavy {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.icon-danger {
+  filter: invert(32%) sepia(58%) saturate(2868%) hue-rotate(328deg) brightness(102%) contrast(101%);
 }
 
-.sdw-normal {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+.icon-success {
+  filter: invert(68%) sepia(6%) saturate(3954%) hue-rotate(89deg) brightness(98%) contrast(83%);
 }
 
-.sdw-clay {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+.icon-info {
+  filter: invert(88%) sepia(93%) saturate(5244%) hue-rotate(321deg) brightness(109%) contrast(98%);
 }
 
-.sdw-inner {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+.icon-dark {
+  filter: invert(14%) sepia(11%) saturate(1356%) hue-rotate(156deg) brightness(95%) contrast(85%);
 }
-
-.sdw-inner-elite {
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.sdw-bulged {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.sdw-cardboard {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.sdw-elite {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-}
-
