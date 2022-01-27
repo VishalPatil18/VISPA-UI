@@ -1,24 +1,23 @@
 .input {
   color: var(--dark);
-  font-size: 0.8rem;
+  font-size: var(--fs-xs-1);
   line-height: 20px;
-  margin: 0 20px 10px;
-  width: 80%;
+  width: 100%;
 }
 
 .input__label {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: var(--space-xxs);
 }
 
 .input__field--text {
   background-color: var(--light);
-  border: 1px solid var(--tertiary);
+  border: 1px solid var(--grey-2);
   float: left;
-  font-size: 0.8rem;
-  margin: 5px 0;
+  font-size: var(--fs-xs-1);
+  margin: var(--space-xxs) 0;
   outline: none;
-  padding: 0.5rem;
+  padding: var(--pd-xs);
   width: 100%;
 }
 
@@ -26,6 +25,7 @@
   border: 1px solid var(--dark)
 }
 
+/* ERROR INPUT */
 .inp__error .input__label{
   color: var(--danger);
 }
@@ -42,46 +42,59 @@
   color: var(--danger);
 }
 
+/* RADIO */
+.radio__label {
+  font-size: var(--fs-xs-1);
+}
+
+.label__disabled {
+  color: var(--grey-3);
+}
+
 .input__field--radio, .input__field--checkbox {
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 var(--space-xxs);
 }
 
 .radio .disabled, .checkbox .disabled{
-  color: var(--tertiary);
+  color: var(--grey-4);
+  cursor: not-allowed;
 }
 
 .radio .disabled__input, .checkbox .disabled__input{
   cursor: not-allowed;
 }
 
+/* W/ICONS */
 .input__icons .input__field--text {
-  background-position: 10px 10px;
+  background-position: var(--space-xs);
   background-size: 16px 16px;
   background-repeat: no-repeat;
   padding-left: 35px;
 }
 
 .email {
-  background-image: url('../../../assests/envelope.svg');
+  background-image: url('../../../assets/envelope.svg');
 }
 
 .password {
-  background-image: url('../../../assests/lock.svg');
+  background-image: url('../../../assets/lock.svg');
 }
 
 .search {
-  background-image: url('../../../assests/search.svg');
+  background-image: url('../../../assets/search.svg');
 }
 
 .user {
-  background-image: url('../../../assests/user.svg');
+  background-image: url('../../../assets/user.svg');
 }
 
+/* PREMIUM */
 .input__premium .input__field--text {
   background-color: white;
   border: 1px solid var(--primary);
-  border-radius: 100rem;
+  border-radius: var(--br-xxxl);
+  line-height: 30px;
 }
 
 .input__username, .input__email, .input__password {
@@ -94,9 +107,10 @@
   position: absolute;
   background-color: white;
   color: var(--primary);
-  font-size: 10px;
+  font-size: var(--fs-xxs-2);
   padding: 0px 5px;
   margin: 0px 10px;
+  line-height: 16px;
 }
 
 .input__username .input__label {
@@ -105,11 +119,11 @@
 }
 
 .input__email .input__label {
-  bottom: -65px;
+  top: 45px;
   left: 20px;
 }
 
 .input__password .input__label {
-  bottom: -112px;
+  top: 92px;
   left: 20px;
 }
