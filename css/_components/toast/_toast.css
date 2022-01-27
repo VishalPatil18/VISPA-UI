@@ -30,11 +30,11 @@
   margin: 0 var(--space-xs);
 }
 
-img:nth-of-type(2n) {
+.toast img:nth-of-type(2n) {
   margin-left: auto;
 }
 
-img:last-child {
+.toast img:last-child {
   margin-right: var(--space-sm);
 }
 
