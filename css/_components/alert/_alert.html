@@ -5,42 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     <title>Alert</title>
+
+    <style>
+      body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    </style>
   </head>
   <body class="poppins">
-    <div class="alert primary">
-      <img class="alert__icon" src="../../../assests/check.svg">
+    <!-- BASIC -->
+    <div class="alert">
+      <span class="alert__text">This is a Basic Alert!</span>
+    </div>
+
+    <!-- BASIC OUTLINE PRIMARY -->
+    <div class="alert al-primary">
+      <span class="alert__text">This is a Basic Outline Primary Alert!</span>
+    </div>
+
+    <!-- BASIC SOLID PRIMARY -->
+    <div class="alert al-solid-primary">
+      <span class="alert__text">This is a Basic Solid Primary Alert!</span>
+    </div>
+
+    <!-- W/ICON OUTLINE PRIMARY -->
+    <div class="alert al-primary">
+      <img class="icon-sm icon-primary" src="../../../assets/info.svg">
       <span class="alert__text">This is a Primary Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <img class="icon-sm alert__icon--right icon-primary" src="../../../assets/close.svg">
     </div>
 
-    <div class="alert success">
-      <img class="alert__icon" src="../../../assests/check.svg">
+    <!-- W/ICON OUTLINE SUCCESS -->
+    <div class="alert al-success">
+      <img class="icon-sm icon-success" src="../../../assets/check.svg">
       <span class="alert__text">This is a Success Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <img class="icon-sm alert__icon--right icon-success" src="../../../assets/close.svg">
     </div>
 
-    <div class="alert danger">
-      <img class="alert__icon" src="../../../assests/danger.svg">
+    <!-- W/ICON OUTLINE DANGER -->
+    <div class="alert al-danger">
+      <img class="icon-sm icon-danger" src="../../../assets/ban.svg">
       <span class="alert__text">This is a Danger Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <img class="icon-sm alert__icon--right icon-danger" src="../../../assets/close.svg">
     </div>
 
-    <div class="alert warning">
-      <img class="alert__icon" src="../../../assests/warning.svg">
+    <!-- W/ICON OUTLINE WARNING -->
+    <div class="alert al-warning">
+      <img class="icon-sm icon-info" src="../../../assets/warning.svg">
       <span class="alert__text">This is a Warning Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <img class="icon-sm alert__icon--right icon-info" src="../../../assets/close.svg">
     </div>
 
-    <div class="alert info">
-      <img class="alert__icon" src="../../../assests/info.svg">
-      <span class="alert__text">This is an Info Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+    <!-- W/ICON SOLID PRIMARY -->
+    <div class="alert al-solid-primary">
+      <img class="icon-sm icon-light" src="../../../assets/info.svg">
+      <span class="alert__text">This is a Solid Primary Alert - Check it now!</span>
+      <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
     </div>
 
-    <div class="alert dark">
-      <img class="alert__icon" src="../../../assests/info.svg">
-      <span class="alert__text">This is a Dark Alert - Check it now!</span>
-      <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+    <!-- W/ICON SOLID SUCCESS -->
+    <div class="alert al-solid-success">
+      <img class="icon-sm icon-light" src="../../../assets/check.svg">
+      <span class="alert__text">This is a Solid Success Alert - Check it now!</span>
+      <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
+    </div>
+
+    <!-- W/ICON SOLID DANGER -->
+    <div class="alert al-solid-danger">
+      <img class="icon-sm icon-light" src="../../../assets/ban.svg">
+      <span class="alert__text">This is a Solid Danger Alert - Check it now!</span>
+      <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
+    </div>
+
+    <!-- W/ICON SOLID WARNING -->
+    <div class="alert al-solid-warning">
+      <img class="icon-sm icon-dark" src="../../../assets/warning.svg">
+      <span class="alert__text">This is a Solid Warning Alert - Check it now!</span>
+      <img class="icon-sm alert__icon--right icon-dark" src="../../../assets/close.svg">
+    </div>
+
+    <!-- W/ICON SOLID DARK -->
+    <div class="alert al-solid-dark">
+      <img class="icon-sm icon-light" src="../../../assets/info.svg">
+      <span class="alert__text">This is a Solid Dark Alert - Check it now!</span>
+      <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
     </div>
   </body>
 </html>
