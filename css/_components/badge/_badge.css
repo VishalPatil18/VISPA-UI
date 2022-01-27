@@ -13,6 +13,7 @@
   top: -10px;
 }
 
+/* BADGE PROFILE */
 .badge__profile {
   border: 2px solid white;
   bottom: 0;
@@ -23,6 +24,27 @@
   width: 18px;
 }
 
+/* BADGE SMALL */
+.bdg-sm {
+  bottom: 0;
+  height: 14px;
+  padding: 0px;
+  right: 0px;
+  top: initial;
+  width: 14px;
+}
+
+/* BADGE LARGE */
+.bdg-lg {
+  bottom: 6px;
+  height: 22px;
+  padding: 0px;
+  right: 0px;
+  top: initial;
+  width: 22px;
+}
+
+/* BADGE COLORS */
 .bdg-primary {
   background-color: var(--primary);
 }
