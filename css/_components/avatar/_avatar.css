@@ -1,5 +1,5 @@
 .avatar {
-  border-radius: 100rem;
+  border-radius: var(--br-xxxl);
   height: 60px;
   width: 60px;
 }
@@ -20,5 +20,5 @@
 }
 
 .avatar--square {
-  border-radius: 5px;
+  border-radius: var(--br-sm);
 }
