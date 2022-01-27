@@ -1,10 +1,16 @@
 .card {
   background-color: white;
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: var(--br-sm);
+  box-shadow: var(--bs-xs);
+  color: var(--dark);
   display: flex;
   flex-direction: column;
   width: 350px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: var(--bs-sm);
 }
 
 .card__body {
@@ -14,121 +20,93 @@
 }
 
 .card__body:hover {
-  background-color: #e0e0e0;
+  background-color: var(--grey-1);
   cursor: pointer;
 }
 
 .card__img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   background-size: cover;
+  border-top-left-radius: var(--br-sm);
+  border-top-right-radius: var(--br-sm);
   width: 100%;
 }
 
 .card__title {
-  padding: 1rem;
-  padding-top: 20px;
+  padding: var(--pd-sm);
+  padding-top: var(--space-sm);
 }
 
 .card__title--h1 {
-  font-size: 1.3rem;
+  font-size: var(--fs-sm-2);
   font-weight: 500;
 }
 
 .card__title--p {
-  color: gray;
-  font-size: 0.85rem;
+  color: var(--grey-4);
+  font-size: var(--fs-xxs-2);
   font-weight: 400;
-  padding-top: 5px;
 }
 
 .card__content {
-  padding: 8px 1rem;
-}
-
-.card__content {
-  color: gray;
-  font-size: 0.9rem;
+  color: var(--grey-5);
+  font-size: var(--fs-xs-1);
   font-weight: 300;
+  padding: var(--pd-sm);
 }
 
 .card__footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 3px 1rem;
+  padding: var(--pd-xs);
+  border-top: 1px solid var(--grey-1);
 }
 
 .card__footer--left {
   display: flex;
-  flex: 1;
-  justify-content: space-between;
-}
-
-.card__button {
-  background: none;
-  border: none;
-  border-radius: 3px;
-  box-sizing: border-box;
-  color: #6200ee;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.6rem 0.7rem;
-}
-
-.card__button:hover {
-  background-color: #ece0fd;
-  border: none;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--grey-1);
 }
 
 .card__footer--right {
   display: flex;
-  flex: 1;
-  justify-content: flex-end;
+  flex: 3;
+  justify-content: space-evenly;
 }
 
 .card__footer--right > a {
   align-items: center;
-  border-radius: 100%;
+  border-radius: var(--br-xxxl);
   cursor: pointer;
   display: flex;
-  padding: 0.6rem;
+  padding: var(--space-xs);
 }
 
 .card__footer--right > a:hover {
-  background-color: #dfdfdf;
+  background-color: var(--grey-1);
   border: none;
 }
 
-/* SOCIAL MEDIA */
-
-.card__premium .card {
+/* TITLE OVER IMAGE */
+.card__toimg .card {
   position: relative;
 }
 
-.card__premium .card__title {
+.card__toimg .card__title {
   color: white;
   position: absolute;
   padding-top: 0px;
-  top: 150px;
+  bottom: 60px;
 }
 
-.card__premium .card__title--h1 {
-  padding-bottom: 5px;
-}
-
-.card__premium .card__title--p {
+.card__toimg .card__title--p {
   color: white;
 }
 
-.card__premium .card__content {
-  font-size: 0.85rem;
-  padding: 1rem;
-}
 
-/* || BASIC W/HEADER */
-
+/* SOCIAL MEDIA */
 .card__socialmedia .card__img {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -146,51 +124,76 @@
 }
 
 .card__socialmedia .card__title--content {
-  margin: 0px 10px;
-}
-
-.card__socialmedia .card__content {
-  padding-top: 15px;
+  margin: 0px var(--space-sm);
 }
 
 .card__socialmedia .card__content:hover {
-  background-color: #e0e0e0;;
+  background-color: #e0e0e0;
 }
 
 .card__socialmedia .card__footer--left {
-  color: var(--tertiary);
+  color: var(--grey-4);
 }
 
 .card__socialmedia .card__title--h1 {
-  font-size: 1rem;
+  font-size: var(--fs-xs-2);
 }
 
 .card__socialmedia .card__title--icon {
   margin-left: auto;
   align-items: center;
-  border-radius: 100%;
+  border-radius: var(--br-xxxl);
   cursor: pointer;
   display: flex;
-  padding: 0.6rem;
+  padding: var(--space-xs);
 }
 
 .card__socialmedia .card__title--icon:hover {
-  background-color: #dfdfdf;
+  background-color: var(--grey-1);
   border: none;
 }
 
-
-/* MINI */
-
-.card__mini .card__body {
-  flex-direction: row;
-  height: 110px;
+/* IMAGE BACKGROUND */
+.card__imgbg .card__img {
+  border-radius: var(--br-sm);
 }
 
-.card__mini .card__img {
-  flex: 0.9;
+.card__imgbg .card__body {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card__mini .card__content {
-  display: none;
+.card__imgbg .card__body:hover {
+  background-color: initial;
+  cursor: pointer;
+}
+
+.card__imgbg .card__footer--right > a:hover {
+  background-color: var(--dark);
+  border: none;
+}
+
+.card__imgbg .card__title--p {
+  color: white;
+}
+
+.card__imgbg .card__footer {
+  border-top: none;
+}
+
+.card__imgbg .card__footer--left {
+  flex: 2;
+  border-right: none;
+  justify-content: flex-start;
+  margin-left: var(--space-sm);
+}
+
+.card__imgbg .card__footer--right {
+  flex: 3;
 }
