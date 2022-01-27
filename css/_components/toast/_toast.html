@@ -23,29 +23,52 @@
   </div>
 
   <!-- INPUT -->
-  <div class="toast toast__input tst--success" id="baseline-toast">
-    <img class="icon--lg toast__icon" src="../../../assests/user.svg" alt="danger-icon">
-    <div class="toast__content">
+  <div class="toast toast__input tst--primary tst" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/user.svg" alt="danger-icon">
+    <div class="input toast__content">
       <p>Please enter your name*</p>
-      <input class=" toast__content--input" type="text">
+      <input class="input__field--text toast__content--input" type="text">
     </div>
-    <img class="icon--md toast__close" src="../../../assests/close.svg" alt="close-btn">
+    <img class="icon-md toast__icon--btn icon-primary" src="../../../assets/close.svg" alt="close-btn">
   </div>
 
   <!-- ICONS -->
+  <!-- PRIMARY -->
+  <div class="toast tst--primary" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/info.svg" alt="info-icon">
+    <p class="toast__content">Bablu and 22 others followed you!</p>
+    <img class="icon-md toast__icon--btn toast__close icon-primary" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- DANGER -->
   <div class="toast tst--danger" id="baseline-toast">
-    <img class="icon--lg toast__icon" src="../../../assests/danger.svg" alt="danger-icon">
+    <img class="icon-lg toast__icon" src="../../../assets/ban.svg" alt="danger-icon">
     <p class="toast__content">Can't send photo. Retry in 5 seconds.</p>
-    <img class="icon--md toast__icon--btn" src="../../../assests/redo.svg" alt="retry-btn">
-    <img class="icon--md toast__close" src="../../../assests/close.svg" alt="close-btn">
+    <img class="icon-md toast__icon--btn icon-danger" src="../../../assets/redo.svg" alt="retry-btn">
+    <img class="icon-md toast__icon--btn icon-danger" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- SUCCESS -->
+  <div class="toast tst--success" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/check.svg" alt="success-icon">
+    <p class="toast__content">Transaction Successful!</p>
+    <img class="icon-md toast__icon--btn icon-success" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- WARNING -->
+  <div class="toast tst--warning" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/warning.svg" alt="warning-icon">
+    <p class="toast__content">Can't send photo. Retry in 5 seconds.</p>
+    <img class="icon-md toast__icon--btn icon-info" src="../../../assets/redo.svg" alt="retry-btn">
+    <img class="icon-md toast__icon--btn icon-info" src="../../../assets/close.svg" alt="close-btn">
   </div>
 
   <!-- STACKED -->
-  <div class="toast toast__stacked tst--info">
+  <div class="toast toast__stacked tst--info tst--danger">
     <p class="toast__content">This item already has the label "travel". You can add a new label.</p>
     <div class="toast__button--wrapper">
-      <a class="toast__button">ADD A NEW LABEL</a>
-      <a class="toast__button">CLOSE</a>
+      <a class="button btn-plain btn-sm">ADD A NEW LABEL</a>
+      <a class="button btn-plain btn-sm">CLOSE</a>
     </div>
   </div>
 </body>
