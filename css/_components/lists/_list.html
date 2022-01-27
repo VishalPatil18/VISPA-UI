@@ -13,6 +13,7 @@
       justify-content: space-evenly;
       align-items: center;
       height: 250vh;
+      padding: 0 20%;
     }
   </style>
   <title>List</title>
@@ -86,33 +87,41 @@
   <!-- STACKED NOTIFICATION -->
   <ul class="list li__stacked">
     <li class="list__item">
-      <div class="alert primary">
-        <img class="alert__icon" src="../../../assests/check.svg">
-        <span class="alert__text">This is a Primary Alert - Check it now!</span>
-        <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <div class="alert al-solid-primary">
+        <img class="icon-sm icon-light" src="../../../assets/info.svg">
+        <span class="alert__text">This is a Solid Primary Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
       </div>
     </li>
     <li class="list__item">
-      <div class="alert success">
-        <img class="alert__icon" src="../../../assests/check.svg">
-        <span class="alert__text">This is a Success Alert - Check it now!</span>
-        <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <div class="alert al-solid-success">
+        <img class="icon-sm icon-light" src="../../../assets/check.svg">
+        <span class="alert__text">This is a Solid Success Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
       </div>
     </li>
     <li class="list__item">
-      <div class="alert warning">
-        <img class="alert__icon" src="../../../assests/warning.svg">
-        <span class="alert__text">This is a Warning Alert - Check it now!</span>
-        <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <div class="alert al-solid-danger">
+        <img class="icon-sm icon-light" src="../../../assets/ban.svg">
+        <span class="alert__text">This is a Solid Danger Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg">
       </div>
     </li>
     <li class="list__item">
-      <div class="alert danger">
-        <img class="alert__icon" src="../../../assests/danger.svg">
-        <span class="alert__text">This is a Danger Alert - Check it now!</span>
-        <img class="alert__icon alert__icon--right" src="../../../assests/close.svg">
+      <div class="alert al-solid-warning">
+        <img class="icon-sm icon-dark" src="../../../assets/warning.svg">
+        <span class="alert__text">This is a Solid Warning Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-dark" src="../../../assets/close.svg">
       </div>
     </li>
+  </ul>
+
+  <!-- PREMIUM LIST MENU -->
+  <ul class="list li__premium">
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/home.svg" alt="home-btn"> Home</li>
+    <li class="list__item list__item--active"><img class="icon-md list__icon icon-primary" src="../../../assets/user.svg" alt="profile-btn"> Profile</li>
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/comment.svg" alt="message-btn"> Messages</li>
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/cog.svg" alt=""> Settings</li>
   </ul>
 </body>
 </html>

@@ -1,24 +1,25 @@
 .list {
-  padding: 0.6rem;
   width: 100%;
+  font-size: var(--fs-xxs-2);
+  color: var(--dark);
 }
 
 .list__item {
   align-items: center;
-  border-radius: 5px;
+  border-radius: var(--br-xs);
   cursor: pointer;
   display: flex;
-  margin-top: 10px;
-  padding: 0.5rem;
+  padding: var(--pd-sm);
 }
 
 .list__item:hover {
-  background-color: rgba(223, 223, 223, 0.5);
+  background-color: var(--grey-1);
 }
 
 /* NESTED */
 .nested__list {
   list-style: none;
+  padding: var(--pd-sm);
 }
 
 /* STACKED */
@@ -41,5 +42,39 @@
 
 .li__stacked .alert {
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: var(--space-sm);
+}
+
+/* PREMIUM */
+.li__premium {
+  box-shadow: var(--bs-sm);
+  padding-left: 0;
+  border-radius: var(--br-sm);
+}
+
+.li__premium .list__item {
+  padding: var(--space-md);
+  font-size: var(--fs-xxs-2);
+  border-radius: var(--br-xxxs);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.li__premium .list__item--active {
+  border-left: 3px solid var(--primary);
+  color: var(--primary);
+}
+
+.li__premium .list__item:first-child {
+  border-top-left-radius: var(--br-sm);
+  border-top-right-radius: var(--br-sm);
+}
+
+.li__premium .list__item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: var(--br-sm);
+  border-bottom-right-radius: var(--br-sm);
+}
+
+.list__icon {
+  margin-right: var(--space-sm);
 }
