@@ -4,21 +4,21 @@
   width: 60px;
 }
 
-.avatar--sm {
+.av-sm {
   height: 40px;
   width: 40px;
 }
 
-.avatar--md {
+.av-md {
   height: 60px;
   width: 60px;
 }
 
-.avatar--lg {
+.av-lg {
   height: 80px;
   width: 80px;
 }
 
-.avatar--square {
+.av-square {
   border-radius: var(--br-sm);
 }

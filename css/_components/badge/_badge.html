@@ -9,39 +9,49 @@
 
   <style>
     body {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-evenly;
     }
   </style>
 </head>
-<body style="padding: 3rem;">
+<body class="poppins">
   <!--   BUTTON BADGE   -->
   <span class="badge__container">
-    <button class="button btn-primary">Action</button>
-    <span class="badge bdg--primary">1128+</span>
+    <button class="button btn-solid-dark">Action</button>
+    <span class="badge bdg-primary">1128+</span>
   </span>
   <br>
 
   <!--   TOGGLE BADGE   -->
   <span class="badge__container">
     <button class="button btn-solid-success" id="bdg-hide-btn">Hide</button>
-    <span class="badge bdg--dark" id="badge">7</span>
+    <span class="badge bdg-dark" id="badge">7</span>
   </span>
   <br>
 
   <!--   ICON BADGE   -->
   <span class="badge__container">
-    <img class="icon--lg" src="../../../assests/shopping-cart.svg" alt="">
-    <span class="badge bdg--success">15</span>
+    <img class="icon-lg" src="../../../assets/shopping-cart.svg" alt="">
+    <span class="badge bdg-danger">15</span>
   </span>
   <br>
 
   <!--   PROFILE BADGE   -->
   <span class="badge__container">
-    <img class="avatar" src="../../../assests/profile_dark.png" alt="profile_img">
-    <span class="badge badge__profile bdg--danger"></span>
+    <img class="avatar av-lg" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-danger"></span>
+  </span>
+
+  <span class="badge__container">
+    <img class="avatar av-md" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-success"></span>
+  </span>
+
+  <span class="badge__container">
+    <img class="avatar av-sm" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-info"></span>
   </span>
 
 </body>

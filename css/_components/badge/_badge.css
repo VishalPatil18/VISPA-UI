@@ -3,13 +3,14 @@
 }
 
 .badge {
-  border-radius: 100rem;
-  font-size: 0.8rem;
-  padding: 2.5px 8px;
+  border-radius: var(--br-xxxl);
+  color: var(--light);
+  font-size: vaar(--fs-xs-1);
+  padding: var(--pd-xxs);
   position: absolute;
-  right: -10px;
+  right: -15px;
   text-align: center;
-  top: -15px;
+  top: -10px;
 }
 
 .badge__profile {
@@ -22,24 +23,23 @@
   width: 18px;
 }
 
-.bdg--danger {
-  background-color: var(--danger);
-  color: var(--light)
-}
-
-.bdg--success {
-  background-color: var(--success);
-}
-
-.bdg--primary {
+.bdg-primary {
   background-color: var(--primary);
 }
 
-.bdg--info {
-  background-color: var(--info);
+.bdg-success {
+  background-color: var(--success);
 }
 
-.bdg--dark {
+.bdg-danger {
+  background-color: var(--danger);
+}
+
+.bdg-info {
+  background-color: var(--info);
+  color: var(--dark);
+}
+
+.bdg-dark {
   background-color: var(--dark);
-  color: var(--light);
 }
