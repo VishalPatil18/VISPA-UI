@@ -1,13 +1,13 @@
 .chip {
   align-items: center;
-  background-color: var(--tertiary-light);
-  border-radius: 100rem;
+  background-color: var(--grey-1);
+  border-radius: var(--br-xxxl);
   cursor: default;
   display: flex;
-  font-size: 0.9rem;
+  font-size: var(--fs-xxs-2);
   justify-content: center;
-  margin: 4px 8px;
-  padding: 0.4rem 0.8rem;
+  margin: var(--space-xxs);
+  padding: var(--space-xxs) var(--space-xs);
   width: fit-content;
 }
 
@@ -17,25 +17,25 @@
 }
 
 .chip:hover {
-  background-color: var(--tertiary);
+  background-color: var(--grey-2);
 }
 
 .ch--primary {
   background-color: var(--primary);
+  color: var(--light);
 }
 
 .ch--primary:hover {
-  background-color: var(--secondary);
-  color: var(--light);
+  background-color: var(--blue-5);
 }
 
 .ch--success {
   background-color: var(--success);
+  color: var(--light);
 }
 
 .ch--success:hover {
-  background-color: var(--success-dark);
-  color: var(--light);
+  background-color: var(--green-4);
 }
 
 .ch--danger {
@@ -44,8 +44,7 @@
 }
 
 .ch--danger:hover {
-  background-color: var(--danger-dark);
-  color: var(--light);
+  background-color: var(--red-5);
 }
 
 .ch--info {
@@ -53,8 +52,7 @@
 }
 
 .ch--info:hover {
-  background-color: var(--info-dark);
-  color: var(--light);
+  background-color: var(--yellow-5);
 }
 
 .ch--dark {
@@ -63,6 +61,5 @@
 }
 
 .ch--dark:hover {
-  background-color: var(--tertiary-light);
-  color: var(--dark);
+  background-color: black;
 }
