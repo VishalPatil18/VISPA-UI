@@ -1,12 +1,12 @@
 .navbar {
   align-items: center;
   background-color: var(--dark);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: var(--bs-sm);
   color: white;
   display: flex;
-  padding: 0.3rem;
+  padding: var(--pd-sm);
   width: 100%;
+  font-size: var(--fs-xs-1);
 }
 
 .navbar__list {
@@ -17,13 +17,17 @@
 
 .navbar__btn {
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  box-sizing: content-box;
-  /* font-size: 14px; */
+  padding: var(--pd-xs);
+  color: var(--light);
+}
+
+.navbar__btn--active {
+  color: var(--primary);
 }
 
 .navbar__btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  color: var(--primary);
 }
 
 .navbar__btn:nth-child(3) {
@@ -36,17 +40,13 @@
 }
 
 .navbar__search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 20px 0px;
   width: min(20%, 200px);
   margin-left: auto;
 }
 
 /* W/ICONS */
 .nb__icons .navbar__search {
-  margin-left: 15px;
+  margin-left: var(--space-sm);
 }
 
 .nb__icons .navbar__list {
@@ -55,6 +55,7 @@
 
 .nb__icons .navbar__btn:hover {
   border-radius: 100rem;
+  color: var(--dark);
 }
 
 .nb__icons {
@@ -71,7 +72,6 @@
 .navbar__user .profile__img {
   height: 25px;
   width: 25px;
-  border-radius: 100rem;
-  margin-right: 5px;
+  border-radius: var(--br-xxxl);
+  margin-right: var(--space-sm);
 }
-
