@@ -103,7 +103,7 @@
   /* BOX SHADOW */
   --bs-xxs: 0 1px 2px 1px rgba(6,10,36,.08) !important;
   --bs-xs: 0 1px 4px 1px rgba(6,10,36,.1),0 5px 10px 0 rgba(6,10,36,.08) !important;
-  --bs-sm: 0 8px 15px 1px rgba(6,10,36,.1),0 18px 24px 1px rgba(6,10,36,.12) !important;
+  --bs-sm: 0 8px 15px 1px rgba(6,10,36,.1),0 18px 24px 1px rgba(6,10,36,.12);
   --bs-md: 0 10px 20px 1px rgba(6,10,36,.1),0 24px 36px 1px rgba(6,10,36,.18) !important;
   --bs-lg: 0 10px 30px 1px rgba(6,10,36,.1),0 40px 48px 1px rgba(6,10,36,.25) !important;
   --bs-xl: 0 10px 30px 1px rgba(6,10,36,.1),0 50px 60px 1px rgba(6,10,36,.4) !important;

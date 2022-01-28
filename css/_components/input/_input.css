@@ -13,7 +13,6 @@
 .input__field--text {
   background-color: var(--light);
   border: 1px solid var(--grey-2);
-  float: left;
   font-size: var(--fs-xs-1);
   margin: var(--space-xxs) 0;
   outline: none;
@@ -114,16 +113,16 @@
 }
 
 .input__username .input__label {
-  top: -5px;
+  top: 0px;
   left: 20px;
 }
 
 .input__email .input__label {
-  top: 45px;
+  top: 0px;
   left: 20px;
 }
 
 .input__password .input__label {
-  top: 92px;
+  top: 0px;
   left: 20px;
 }
