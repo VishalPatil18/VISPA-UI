@@ -2,9 +2,9 @@
   background-color: white;
   border-radius: var(--br-xs);
   border: none;
+  box-shadow: var(--bs-xs);
   color: var(--dark);
   cursor: pointer;
-  box-shadow: var(--bs-xs);
   font-size: var(--fs-xs-2);
   padding: var(--space-xxs) var(--space-md);
 }
@@ -91,11 +91,11 @@
 
 /* BUTTON W/ICON */
 .btn-w-icon {
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: initial;
   box-shadow: initial;
+  display: flex;
+  justify-content: center;
 }
 
 .button__icon {
@@ -109,19 +109,19 @@
 
 /* SOCIAL MEDIA */
 .btn-socialmedia {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: var(--br-full);
   box-sizing: content-box;
+  display: flex;
+  height: 30px;
+  justify-content: center;
   padding: 1rem;
+  width: 30px;
 }
 
 .btn-socialmedia:hover {
-  opacity: 0.9;
   box-shadow: var(--bs-md);
+  opacity: 0.9;
 }
 
 .btn-socialmedia .button__icon {
@@ -131,68 +131,68 @@
 /* OUTLINE */
 .btn-outline-primary {
   border: 2px solid var(--primary);
-  color: var(--primary);
   box-shadow: none;
+  color: var(--primary);
 }
 
 .btn-outline-primary:hover {
-  color: white;
   background-color: var(--primary);
+  color: white;
 }
 
 .btn-outline-secondary {
   border: 2px solid var(--secondary);
-  color: var(--secondary);
   box-shadow: none;
+  color: var(--secondary);
 }
 
 .btn-outline-secondary:hover {
-  color: white;
   background-color: var(--secondary);
+  color: white;
 }
 
 .btn-outline-danger {
   border: 2px solid var(--danger);
-  color: var(--danger);
   box-shadow: none;
+  color: var(--danger);
 }
 
 .btn-outline-danger:hover {
-  color: white;
   background-color: var(--danger);
+  color: white;
 }
 
 .btn-outline-success {
   border: 2px solid var(--success);
-  color: var(--success);
   box-shadow: none;
+  color: var(--success);
 }
 
 .btn-outline-success:hover {
-  color: white;
   background-color: var(--success);
+  color: white;
 }
 
 .btn-outline-warning {
   border: 2px solid var(--warning);
-  color: var(--warning);
   box-shadow: none;
+  color: var(--warning);
 }
 
 .btn-outline-warning:hover {
-  color: var(--dark);
   background-color: var(--warning);
+  color: var(--dark);
 }
 
 .btn-outline-dark {
   border: 2px solid var(--dark);
-  color: var(--dark);
   box-shadow: none;
+  color: var(--dark);
 }
 
 .btn-outline-dark:hover {
-  color: white;
   background-color: var(--dark);
+  color: white;
 }
 
 /* SOLID BUTTONS */
