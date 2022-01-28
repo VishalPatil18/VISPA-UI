@@ -1,0 +1,19 @@
+.img__wrapper {
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+.img {
+  object-fit: cover;
+  width: 400px;
+}
+
+.img-round {
+  border-radius: var(--br-full);
+  height: 400px;
+}
+
+.img-res {
+  width: 100%;
+}
