@@ -1,7 +1,7 @@
 .list {
-  width: 100%;
-  font-size: var(--fs-xxs-2);
   color: var(--dark);
+  font-size: var(--fs-xxs-2);
+  width: 100%;
 }
 
 .list__item {
@@ -10,6 +10,7 @@
   cursor: pointer;
   display: flex;
   padding: var(--pd-sm);
+  transition: 0.2s ease-in;
 }
 
 .list__item:hover {
@@ -24,8 +25,8 @@
 
 /* STACKED */
 .li__stacked .list__item {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .li__stacked .list__item:hover {
@@ -47,16 +48,16 @@
 
 /* PREMIUM */
 .li__premium {
+  border-radius: var(--br-sm);
   box-shadow: var(--bs-sm);
   padding-left: 0;
-  border-radius: var(--br-sm);
 }
 
 .li__premium .list__item {
-  padding: var(--space-md);
-  font-size: var(--fs-xxs-2);
-  border-radius: var(--br-xxxs);
   border-bottom: 1px solid var(--grey-2);
+  border-radius: var(--br-xxxs);
+  font-size: var(--fs-xxs-2);
+  padding: var(--space-md);
 }
 
 .li__premium .list__item--active {
