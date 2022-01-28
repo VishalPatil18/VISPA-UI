@@ -1,16 +1,16 @@
 .drawer__list {
-  list-style: none;
   font-size: var(--fs-xxs-2);
+  list-style: none;
 }
 
 .drawer__item {
-  padding: var(--pd-sm);
-  display: flex;
-  border-top-right-radius: var(--br-xs);
   border-bottom-right-radius: var(--br-xs);
-  font-weight: 600;
-  cursor: pointer;
+  border-top-right-radius: var(--br-xs);
   color: var(--dark);
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  padding: var(--pd-sm);
   transition: 0.2s ease-in;
 }
 
@@ -27,21 +27,21 @@
 }
 
 .list__subheading {
-  padding: var(--pd-sm);
-  margin-top: var(--space-sm);
   color: var(--grey-4);
   font-size: var(--fs-xxs-1);
+  margin-top: var(--space-sm);
+  padding: var(--pd-sm);
   text-transform: uppercase;
 }
 
 /* LARGE ICONS */
 .dw__lgicon .drawer__item {
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  height: 80px;
   justify-content: center;
   padding: var(--pd-sm);
   width: 100%;
-  height: 80px;
 }
 
 .dw__lgicon .drawer__item--icon {
@@ -50,6 +50,6 @@
 
 /* ROUND ITEMS */
 .dr__rounditem .drawer__item {
-  border-top-right-radius: var(--br-xxxl);
   border-bottom-right-radius: var(--br-xxxl);
+  border-top-right-radius: var(--br-xxxl);
 }
