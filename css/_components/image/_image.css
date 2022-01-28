@@ -1,7 +1,7 @@
 .img__wrapper {
   height: 400px;
-  width: 400px;
   position: relative;
+  width: 400px;
 }
 
 .img {
@@ -10,8 +10,8 @@
 }
 
 .img-round {
+  border-radius: var(--br-full);
   height: 400px;
-  border-radius: var(--br-xxxl);
 }
 
 .img-res {
