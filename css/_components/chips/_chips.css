@@ -9,6 +9,7 @@
   margin: var(--space-xxs);
   padding: var(--space-xxs) var(--space-xs);
   width: fit-content;
+  transition: 0.2s ease-in;
 }
 
 .chip__icon {
