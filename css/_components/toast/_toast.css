@@ -13,6 +13,7 @@
 
 .toast:hover {
   box-shadow: var(--bs-md);
+  transition: 0.2s ease-in;
 }
 
 .toast__content {
@@ -21,8 +22,8 @@
 }
 
 .toast__icon {
-  padding: 2rem;
   box-sizing: content-box;
+  padding: 2rem;
 }
 
 .toast__icon--btn {
@@ -40,19 +41,23 @@
 
 /* BASIC */
 .toast__basic {
-  justify-content: center;
   background-color: var(--light);
+  justify-content: center;
 }
 
 .toast__basic .toast__content{
   justify-content: center;
-  padding: var(--space-md);
   margin-left: 0px;
+  padding: var(--space-md);
 }
 
 /* INPUT */
 .toast__input .toast__content--input{
   width: 75%;
+}
+
+.toast__input .toast__icon {
+  height: 48%;
 }
 
 .toast__input .toast__close {
@@ -66,15 +71,15 @@
 }
 
 .toast__stacked .toast__content {
-  font-size: var(--fs-xs-1);
   flex-basis: 100%;
+  font-size: var(--fs-xs-1);
   padding: var(--pd-sm);
 }
 
 .toast__button--wrapper {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: var(--pd-sm);
   width: 100%;
 }
@@ -89,9 +94,9 @@
 
 /* DANGER */
 .tst--danger {
+  background-color: white;
   border: 1px solid var(--danger);
   color: var(--danger);
-  background-color: white;
 }
 
 .tst--danger .toast__icon {
@@ -104,9 +109,9 @@
 
 /* SUCCESS */
 .tst--success {
+  background-color: white;
   border: 1px solid var(--success);
   color: var(--success);
-  background-color: white;
 }
 
 .tst--success .toast__icon {
@@ -119,9 +124,9 @@
 
 /* PRIMARY */
 .tst--primary {
+  background-color: white;
   border: 1px solid var(--primary);
   color: var(--primary);
-  background-color: white;
 }
 
 .tst--primary .toast__icon {
@@ -134,9 +139,9 @@
 
 /* WARNING */
 .tst--warning {
+  background-color: white;
   border: 1px solid var(--warning);
   color: var(--warning);
-  background-color: white;
 }
 
 .tst--warning .toast__icon {
