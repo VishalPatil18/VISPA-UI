@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Space+Mono:wght@400;700&family=Staatliches&display=swap');
+
+/* BODY */
+.bd-1 {
+  font-size: var(--fs-xxxl-1);
+  font-weight: var(--fw-4);
+}
+
+.bd-2 {
+  font-size: var(--fs-xxl-2);
+  font-weight: var(--fw-4);
+}
+
+.bd-3 {
+  font-size: var(--fs-xl-1);
+  font-weight: var(--fw-4);
+}
+
+.bd-4 {
+  font-size: var(--fs-md-2);
+  font-weight: var(--fw-4);
+}
+
+.bd-5 {
+  font-size: var(--fs-xs-2);
+  font-weight: var(--fw-3);
+}
+
+.bd-6 {
+  font-size: var(--fs-xxxs-2);
+  font-weight: var(--fw-3);
+}
+
+/* CAPTION */
+.cp {
+  color: var(--grey-4);
+  font-size: var(--fs-xxs-2);
+  font-weight: var(--fw-3);
+}
+
+/* FONT FAMILY AVAILABLE */
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.space-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+.staatliches{
+  font-family: 'Staatliches', cursive;
+}
+
+/* HEADINGS */
+.h-1 {
+  font-size: var(--fs-xxxl-2);
+  font-weight: var(--fw-9);
+}
+
+.h-2 {
+  font-size: var(--fs-xxxl-1);
+  font-weight: var(--fw-9);
+}
+
+.h-3 {
+  font-size: var(--fs-xxl-2);
+  font-weight: var(--fw-7);
+}
+
+.h-4 {
+  font-size: var(--fs-xl-1);
+  font-weight: var(--fw-7);
+}
+
+.h-5 {
+  font-size: var(--fs-md-2);
+  font-weight: var(--fw-6);
+}
+
+.h-6 {
+  font-size: var(--fs-sm-2);
+  font-weight: var(--fw-6);
+}
+
+/* SUBTITLE */
+.st-1 {
+  font-size: var(--fs-xs-2);
+  font-weight: var(--fw-7);
+}
+
+.st-2 {
+  font-size: var(--fs-xs-1);
+  font-weight: var(--fw-7);
+}
