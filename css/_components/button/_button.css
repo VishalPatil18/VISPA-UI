@@ -2,29 +2,32 @@
   background-color: white;
   border-radius: var(--br-xs);
   border: none;
-  box-shadow: var(--bs-xs);
   color: var(--dark);
   cursor: pointer;
+  box-shadow: var(--bs-xs);
   font-size: var(--fs-xs-2);
-  padding: var(--pd-sm);
+  padding: var(--space-xxs) var(--space-md);
+}
+
+.button:hover {
+  transition: 0.25s ease-in-out;
 }
 
 /* SMALL */
 .btn-sm {
   font-size: var(--fs-xs-1);
-  padding: var(--pd-xs);
+  padding: var(--space-xxxs) var(--space-sm);
 }
 
 /* MEDIUM */
 .btn-md {
   font-size: var(--fs-xs-2);
-  padding: var(--pd-sm);
 }
 
 /* LARGE */
 .btn-lg {
   font-size: var(--fs-sm-1);
-  padding: var(--pd-md);
+  padding: var(--space-xs) var(--space-lg);
 }
 
 /* PLAIN */
@@ -33,28 +36,57 @@
   box-shadow: initial;
 }
 
+.btn-plain:hover {
+  background-color: var(--grey-1);
+  box-shadow: initial;
+}
+
 .btn-primary {
   color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-1);
 }
 
 .btn-secondary {
   color: var(--secondary);
 }
 
+.btn-secondary:hover {
+  background-color: var(--indigo-1);
+}
+
 .btn-danger {
   color: var(--danger);
+}
+
+.btn-danger:hover {
+  background-color: var(--red-1);
 }
 
 .btn-success {
   color: var(--success);
 }
 
+.btn-success:hover {
+  background-color: var(--green-1);
+}
+
 .btn-warning {
   color: var(--warning);
 }
 
+.btn-warning:hover {
+  background-color: var(--yellow-1);
+}
+
 .btn-dark {
   color: var(--dark);
+}
+
+.btn-dark:hover {
+  background-color: var(--grey-3);
 }
 
 /* BUTTON W/ICON */
@@ -62,15 +94,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: initial;
+  box-shadow: initial;
 }
 
 .button__icon {
-  margin-right: var(--space-sm);
+  margin-right: var(--space-xs);
 }
 
 /* ROUND BUTTON */
 .btn-round {
-  border-radius: var(--br-xxxl);
+  border-radius: var(--br-full);
 }
 
 /* SOCIAL MEDIA */
@@ -80,9 +114,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: var(--br-xxxl);
+  border-radius: var(--br-full);
   box-sizing: content-box;
   padding: 1rem;
+}
+
+.btn-socialmedia:hover {
+  opacity: 0.9;
+  box-shadow: var(--bs-md);
 }
 
 .btn-socialmedia .button__icon {
@@ -96,10 +135,20 @@
   box-shadow: none;
 }
 
+.btn-outline-primary:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
 .btn-outline-secondary {
   border: 2px solid var(--secondary);
   color: var(--secondary);
   box-shadow: none;
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  background-color: var(--secondary);
 }
 
 .btn-outline-danger {
@@ -108,10 +157,20 @@
   box-shadow: none;
 }
 
+.btn-outline-danger:hover {
+  color: white;
+  background-color: var(--danger);
+}
+
 .btn-outline-success {
   border: 2px solid var(--success);
   color: var(--success);
   box-shadow: none;
+}
+
+.btn-outline-success:hover {
+  color: white;
+  background-color: var(--success);
 }
 
 .btn-outline-warning {
@@ -120,10 +179,20 @@
   box-shadow: none;
 }
 
+.btn-outline-warning:hover {
+  color: var(--dark);
+  background-color: var(--warning);
+}
+
 .btn-outline-dark {
   border: 2px solid var(--dark);
   color: var(--dark);
   box-shadow: none;
+}
+
+.btn-outline-dark:hover {
+  color: white;
+  background-color: var(--dark);
 }
 
 /* SOLID BUTTONS */
@@ -132,9 +201,17 @@
   color: white;
 }
 
+.btn-solid-primary:hover {
+  background-color: #0390e2;
+}
+
 .btn-solid-secondary {
   background-color: var(--secondary);
   color: white;
+}
+
+.btn-solid-secondary:hover {
+  background-color: var(--blue-6);
 }
 
 .btn-solid-danger {
@@ -142,17 +219,33 @@
   color: white;
 }
 
+.btn-solid-danger:hover {
+  background-color: var(--red-6);
+}
+
 .btn-solid-success {
   background-color: var(--success);
   color: white;
 }
 
+.btn-solid-success:hover {
+  background-color: var(--green-5);
+}
+
 .btn-solid-warning {
   background-color: var(--warning);
-  color: white;
+  color: var(--dark);
+}
+
+.btn-solid-warning:hover {
+  background-color: var(--yellow-5);
 }
 
 .btn-solid-dark {
   background-color: var(--dark);
   color: white;
+}
+
+.btn-solid-dark:hover {
+  background-color: rgb(17, 17, 17);
 }
