@@ -54,6 +54,18 @@
   padding: var(--pd-sm);
 }
 
+.card__button {
+  padding: var(--pd-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card__button .button {
+  width: 100%;
+}
+
 .card__footer {
   align-items: center;
   display: flex;
@@ -68,6 +80,10 @@
   justify-content: center;
   align-items: center;
   border-right: 1px solid var(--grey-1);
+}
+
+.card__footer .card__button {
+  padding: 0 var(--space-md);
 }
 
 .card__footer--right {
@@ -98,7 +114,7 @@
   color: white;
   position: absolute;
   padding-top: 0px;
-  bottom: 60px;
+  top: 18px;
 }
 
 .card__toimg .card__title--p {

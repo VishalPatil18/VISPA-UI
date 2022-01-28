@@ -72,22 +72,22 @@
 
 .h-3 {
   font-size: var(--fs-xxl-2);
-  font-weight: var(--fw-9);
+  font-weight: var(--fw-7);
 }
 
 .h-4 {
   font-size: var(--fs-xl-1);
-  font-weight: var(--fw-9);
+  font-weight: var(--fw-7);
 }
 
 .h-5 {
   font-size: var(--fs-md-2);
-  font-weight: var(--fw-9);
+  font-weight: var(--fw-6);
 }
 
 .h-6 {
   font-size: var(--fs-sm-2);
-  font-weight: var(--fw-9);
+  font-weight: var(--fw-6);
 }
 
 /* SUBTITLE */
