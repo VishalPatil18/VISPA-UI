@@ -140,17 +140,6 @@
   --fw-8: 800;
   --fw-9: 900;
 
-  /* PADDING */
-  --pd-xxxs: 0.1rem var(--space-xxxs);
-  --pd-xxs: var(--space-xxxs) var(--space-xs); 
-  --pd-xs: var(--space-xxs) var(--space-sm);
-  --pd-sm: var(--space-xs) var(--space-md);
-  --pd-md: var(--space-sm) var(--space-lg);
-  --pd-lg: var(--space-md) var(--space-xl);    
-  --pd-xl: var(--space-lg) var(--space-xxl);
-  --pd-xxl: var(--space-xl) var(--space-xxxl); 
-  --pd-xxxl: var(--space-xxl) var(--space-xxxl);
-
   /* SCREEN SIZES FOR MEDIA QUERIES */
   --screen-xs: 480px;
   --screen-sm: 640px;
@@ -169,4 +158,15 @@
   --space-xl: 4.0rem;
   --space-xxl: 6.4rem;
   --space-xxxl: 12.8rem;
+
+  /* PADDING */
+  --pd-xxxs: 0.1rem var(--space-xxxs);
+  --pd-xxs: var(--space-xxxs) var(--space-xs); 
+  --pd-xs: var(--space-xxs) var(--space-sm);
+  --pd-sm: var(--space-xs) var(--space-md);
+  --pd-md: var(--space-sm) var(--space-lg);
+  --pd-lg: var(--space-md) var(--space-xl);    
+  --pd-xl: var(--space-lg) var(--space-xxl);
+  --pd-xxl: var(--space-xl) var(--space-xxxl); 
+  --pd-xxxl: var(--space-xxl) var(--space-xxxl);
 }

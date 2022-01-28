@@ -3,9 +3,9 @@
 }
 
 .badge {
-  border-radius: var(--br-xxxl);
-  color: var(--light);
-  font-size: vaar(--fs-xs-1);
+  border-radius: var(--br-full);
+  color: white;
+  font-size: var(--fs-xxs-2);
   padding: var(--pd-xxs);
   position: absolute;
   right: -15px;
