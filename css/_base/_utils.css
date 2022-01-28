@@ -1,0 +1,61 @@
+/* CENTERED TEXT */
+.txt-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* ICON COLOR */
+.icon-light {
+  filter: invert(100%) sepia(1%) saturate(352%) hue-rotate(19deg) brightness(112%) contrast(100%);
+}
+
+.icon-primary {
+  filter: invert(61%) sepia(64%) saturate(3429%) hue-rotate(173deg) brightness(97%) contrast(93%);
+}
+
+.icon-danger {
+  filter: invert(32%) sepia(58%) saturate(2868%) hue-rotate(328deg) brightness(102%) contrast(101%);
+}
+
+.icon-success {
+  filter: invert(68%) sepia(6%) saturate(3954%) hue-rotate(89deg) brightness(98%) contrast(83%);
+}
+
+.icon-warning {
+  filter: invert(88%) sepia(93%) saturate(5244%) hue-rotate(321deg) brightness(109%) contrast(98%);
+}
+
+.icon-dark {
+  filter: invert(14%) sepia(11%) saturate(1356%) hue-rotate(156deg) brightness(95%) contrast(85%);
+}
+
+.icon-grey {
+  filter: invert(41%) sepia(29%) saturate(0%) hue-rotate(181deg) brightness(87%) contrast(96%);
+}
+
+/* ICON SIZING */
+.icon-xs {
+  height: 12px;
+  width: 12px;
+}
+
+.icon-sm {
+  height: 15px;
+  width: 15px;
+}
+
+.icon-md {
+  height: 20px;
+  width: 20px;
+}
+
+.icon-lg {
+  height: 25px;
+  width: 25px;
+}
+
+.icon-xl {
+  height: 35px;
+  width: 35px;
+}
