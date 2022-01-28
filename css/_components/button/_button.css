@@ -107,6 +107,14 @@
   border-radius: var(--br-full);
 }
 
+/* ACTION BUTTON */
+.btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-lg-2);
+}
+
 /* SOCIAL MEDIA */
 .btn-socialmedia {
   align-items: center;
