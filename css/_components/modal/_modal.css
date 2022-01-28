@@ -1,4 +1,4 @@
-body > button {
+/* body > button {
   padding: 0.5rem 1rem;
   width: 200px;
   margin: 10px;
@@ -71,10 +71,10 @@ body > button:hover {
   display: none;  
   position: fixed;
   
-}
+} */
 
 /* || SIMPLE */
-
+/* 
 .simple {
   display: none;
 }
@@ -112,10 +112,10 @@ body > button:hover {
 
 .dialog__content span {
   margin-left: 15px;
-}
+} */
 
 /* || CONFIRMATION */
-
+/* 
 .confirmation {
   display: none;
 } 
@@ -126,4 +126,4 @@ body > button:hover {
 
 .confirmation .dialog__footer{
   border-top: 1px solid gray;
-}
+} */

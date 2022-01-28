@@ -57,8 +57,8 @@
   background-color: var(--danger);
 }
 
-.bdg-info {
-  background-color: var(--info);
+.bdg-warning {
+  background-color: var(--warning);
   color: var(--dark);
 }
 

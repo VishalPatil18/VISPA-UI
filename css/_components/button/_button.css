@@ -49,8 +49,8 @@
   color: var(--success);
 }
 
-.btn-info {
-  color: var(--info);
+.btn-warning {
+  color: var(--warning);
 }
 
 .btn-dark {
@@ -114,9 +114,9 @@
   box-shadow: none;
 }
 
-.btn-outline-info {
-  border: 2px solid var(--info);
-  color: var(--info);
+.btn-outline-warning {
+  border: 2px solid var(--warning);
+  color: var(--warning);
   box-shadow: none;
 }
 
@@ -147,8 +147,8 @@
   color: white;
 }
 
-.btn-solid-info {
-  background-color: var(--info);
+.btn-solid-warning {
+  background-color: var(--warning);
   color: white;
 }
 

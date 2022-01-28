@@ -47,11 +47,11 @@
   background-color: var(--red-5);
 }
 
-.ch--info {
-  background-color: var(--info);
+.ch--warning {
+  background-color: var(--warning);
 }
 
-.ch--info:hover {
+.ch--warning:hover {
   background-color: var(--yellow-5);
 }
 

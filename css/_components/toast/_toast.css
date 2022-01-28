@@ -134,15 +134,15 @@
 
 /* WARNING */
 .tst--warning {
-  border: 1px solid var(--info);
-  color: var(--info);
+  border: 1px solid var(--warning);
+  color: var(--warning);
   background-color: white;
 }
 
 .tst--warning .toast__icon {
-  background-color: var(--info);
+  background-color: var(--warning);
 }
 
 .tst--warning .toast__button {
-  color: var(--info);
+  color: var(--warning);
 }

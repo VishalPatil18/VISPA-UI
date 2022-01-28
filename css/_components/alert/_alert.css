@@ -4,17 +4,19 @@
   border: 1px solid var(--dark);
   color: var(--dark);
   display: flex;
-  font-size: var(--fs-xxs-2);
-  margin: var(--space-xxs);
+  font-size: var(--fs-xs-1);
+  margin: var(--space-xxxs);
   padding: var(--pd-sm);
   width: min(400px, 90%);
 }
 
 .alert__icon--right {
   margin-left: auto;
+  cursor: pointer;
 }
 
-.alert__text {
+/* W/ICON */
+.al-wicon .alert__text {
   margin: 0 var(--space-sm);
 }
 
@@ -39,8 +41,8 @@
 
 .al-warning {
   background-color: white;
-  border: 1px solid var(--info);
-  color: var(--info);
+  border: 1px solid var(--warning);
+  color: var(--warning);
 }
 
 /* SOLID */
@@ -63,7 +65,7 @@
 }
 
 .al-solid-warning {
-  background-color: var(--info);
+  background-color: var(--warning);
   border: none;
   color: var(--dark);
 }
