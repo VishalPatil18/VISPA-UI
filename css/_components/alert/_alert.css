@@ -1,0 +1,77 @@
+.alert {
+  align-items: center;
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  display: flex;
+  font-size: var(--fs-xs-1);
+  margin: var(--space-xxxs);
+  padding: var(--pd-sm);
+  width: min(400px, 90%);
+}
+
+.alert__icon--right {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* W/ICON */
+.al-wicon .alert__text {
+  margin: 0 var(--space-sm);
+}
+
+/* OUTLINE */
+.al-primary {
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.al-success {
+  background-color: white;
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.al-danger {
+  background-color: white;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.al-warning {
+  background-color: white;
+  border: 1px solid var(--warning);
+  color: var(--warning);
+}
+
+/* SOLID */
+.al-solid-primary {
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+}
+
+.al-solid-success {
+  background-color: var(--success);
+  border: none;
+  color: var(--light);
+}
+
+.al-solid-danger {
+  background-color: var(--danger);
+  border: none;
+  color: var(--light);
+}
+
+.al-solid-warning {
+  background-color: var(--warning);
+  border: none;
+  color: var(--dark);
+}
+
+.al-solid-dark {
+  background-color: var(--dark);
+  border: none;
+  color: var(--light);
+}
