@@ -11,6 +11,7 @@
   font-weight: 600;
   cursor: pointer;
   color: var(--dark);
+  transition: 0.2s ease-in;
 }
 
 .drawer__item:hover {
@@ -39,7 +40,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--pd-sm);
-  width: max(150px, 80%);
+  width: 100%;
   height: 80px;
 }
 
