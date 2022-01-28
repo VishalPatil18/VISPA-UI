@@ -11,8 +11,8 @@
 }
 
 .alert__icon--right {
-  margin-left: auto;
   cursor: pointer;
+  margin-left: auto;
 }
 
 /* W/ICON */
