@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+  <title>Badge</title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+<body class="poppins">
+  <!--   BUTTON BADGE   -->
+  <span class="badge__container">
+    <button class="button btn-solid-dark">Action</button>
+    <span class="badge bdg-primary">1228+</span>
+  </span>
+  <br>
+
+  <!--   TOGGLE BADGE   -->
+  <span class="badge__container">
+    <button class="button btn-solid-success" id="bdg-hide-btn">Hide</button>
+    <span class="badge bdg-dark" id="badge">7+</span>
+  </span>
+  <br>
+
+  <!--   ICON BADGE   -->
+  <span class="badge__container">
+    <img class="icon-xl" src="../../../assets/shopping-cart.svg" alt="">
+    <span class="badge bdg-danger">15</span>
+  </span>
+  <br>
+
+  <!--   PROFILE BADGE   -->
+  <span class="badge__container">
+    <img class="avatar av-lg" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-lg bdg-danger"></span>
+  </span>
+
+  <span class="badge__container">
+    <img class="avatar av-md" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-success"></span>
+  </span>
+
+  <span class="badge__container">
+    <img class="avatar av-sm" src="../../../assets/profile_dark.png" alt="profile_img">
+    <span class="badge badge__profile bdg-sm bdg-warning"></span>
+  </span>
+
+</body>
+
+<script>
+  // Toggle Badge JS
+  const bdgHideBtn = document.getElementById("bdg-hide-btn");
+  const badgeContent = document.getElementById("badge");
+
+  let isVisible = true;
+
+  bdgHideBtn.addEventListener("click", () => {
+    badgeContent.style.display = !isVisible ? "flex" : "none";
+    isVisible = !isVisible;
+  });
+</script>
+
+</html>

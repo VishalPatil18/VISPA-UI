@@ -1,0 +1,259 @@
+.button {
+  background-color: white;
+  border-radius: var(--br-xs);
+  border: none;
+  box-shadow: var(--bs-xs);
+  color: var(--dark);
+  cursor: pointer;
+  font-size: var(--fs-xs-2);
+  padding: var(--space-xxs) var(--space-md);
+}
+
+.button:hover {
+  transition: 0.25s ease-in-out;
+}
+
+/* SMALL */
+.btn-sm {
+  font-size: var(--fs-xs-1);
+  padding: var(--space-xxxs) var(--space-sm);
+}
+
+/* MEDIUM */
+.btn-md {
+  font-size: var(--fs-xs-2);
+}
+
+/* LARGE */
+.btn-lg {
+  font-size: var(--fs-sm-1);
+  padding: var(--space-xs) var(--space-lg);
+}
+
+/* PLAIN */
+.btn-plain {
+  background-color: initial;
+  box-shadow: initial;
+}
+
+.btn-plain:hover {
+  background-color: var(--grey-1);
+  box-shadow: initial;
+}
+
+.btn-primary {
+  color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-1);
+}
+
+.btn-secondary {
+  color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--indigo-1);
+}
+
+.btn-danger {
+  color: var(--danger);
+}
+
+.btn-danger:hover {
+  background-color: var(--red-1);
+}
+
+.btn-success {
+  color: var(--success);
+}
+
+.btn-success:hover {
+  background-color: var(--green-1);
+}
+
+.btn-warning {
+  color: var(--warning);
+}
+
+.btn-warning:hover {
+  background-color: var(--yellow-1);
+}
+
+.btn-dark {
+  color: var(--dark);
+}
+
+.btn-dark:hover {
+  background-color: var(--grey-3);
+}
+
+/* BUTTON W/ICON */
+.btn-w-icon {
+  align-items: center;
+  background-color: initial;
+  box-shadow: initial;
+  display: flex;
+  justify-content: center;
+}
+
+.button__icon {
+  margin-right: var(--space-xs);
+}
+
+/* ROUND BUTTON */
+.btn-round {
+  border-radius: var(--br-full);
+}
+
+/* ACTION BUTTON */
+.btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-lg-2);
+}
+
+/* SOCIAL MEDIA */
+.btn-socialmedia {
+  align-items: center;
+  border-radius: var(--br-full);
+  box-sizing: content-box;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  padding: 1rem;
+  width: 30px;
+}
+
+.btn-socialmedia:hover {
+  box-shadow: var(--bs-md);
+  opacity: 0.9;
+}
+
+.btn-socialmedia .button__icon {
+  margin-right: 0;
+}
+
+/* OUTLINE */
+.btn-outline-primary {
+  border: 2px solid var(--primary);
+  box-shadow: none;
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-outline-secondary {
+  border: 2px solid var(--secondary);
+  box-shadow: none;
+  color: var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-outline-danger {
+  border: 2px solid var(--danger);
+  box-shadow: none;
+  color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: white;
+}
+
+.btn-outline-success {
+  border: 2px solid var(--success);
+  box-shadow: none;
+  color: var(--success);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--success);
+  color: white;
+}
+
+.btn-outline-warning {
+  border: 2px solid var(--warning);
+  box-shadow: none;
+  color: var(--warning);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--warning);
+  color: var(--dark);
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--dark);
+  box-shadow: none;
+  color: var(--dark);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--dark);
+  color: white;
+}
+
+/* SOLID BUTTONS */
+.btn-solid-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-solid-primary:hover {
+  background-color: #0390e2;
+}
+
+.btn-solid-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-solid-secondary:hover {
+  background-color: var(--blue-6);
+}
+
+.btn-solid-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.btn-solid-danger:hover {
+  background-color: var(--red-6);
+}
+
+.btn-solid-success {
+  background-color: var(--success);
+  color: white;
+}
+
+.btn-solid-success:hover {
+  background-color: var(--green-5);
+}
+
+.btn-solid-warning {
+  background-color: var(--warning);
+  color: var(--dark);
+}
+
+.btn-solid-warning:hover {
+  background-color: var(--yellow-5);
+}
+
+.btn-solid-dark {
+  background-color: var(--dark);
+  color: white;
+}
+
+.btn-solid-dark:hover {
+  background-color: rgb(17, 17, 17);
+}
