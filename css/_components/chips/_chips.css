@@ -1,0 +1,66 @@
+.chip {
+  align-items: center;
+  background-color: var(--grey-1);
+  border-radius: var(--br-xxxl);
+  cursor: default;
+  display: flex;
+  font-size: var(--fs-xxs-2);
+  justify-content: center;
+  margin: var(--space-xxs);
+  padding: var(--space-xxs) var(--space-xs);
+  width: fit-content;
+  transition: 0.2s ease-in;
+}
+
+.chip__icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.chip:hover {
+  background-color: var(--grey-2);
+}
+
+.ch--primary {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.ch--primary:hover {
+  background-color: var(--blue-5);
+}
+
+.ch--success {
+  background-color: var(--success);
+  color: var(--light);
+}
+
+.ch--success:hover {
+  background-color: var(--green-4);
+}
+
+.ch--danger {
+  background-color: var(--danger);
+  color: var(--light);
+}
+
+.ch--danger:hover {
+  background-color: var(--red-5);
+}
+
+.ch--warning {
+  background-color: var(--warning);
+}
+
+.ch--warning:hover {
+  background-color: var(--yellow-5);
+}
+
+.ch--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.ch--dark:hover {
+  background-color: black;
+}
