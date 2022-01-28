@@ -23,12 +23,12 @@
 
 .bd-5 {
   font-size: var(--fs-xs-2);
-  font-weight: var(--fw-4);
+  font-weight: var(--fw-3);
 }
 
 .bd-6 {
   font-size: var(--fs-xxxs-2);
-  font-weight: var(--fw-4);
+  font-weight: var(--fw-3);
 }
 
 /* CAPTION */

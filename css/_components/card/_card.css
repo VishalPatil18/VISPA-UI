@@ -36,15 +36,9 @@
   padding-top: var(--space-sm);
 }
 
-.card__title--h1 {
-  font-size: var(--fs-sm-2);
-  font-weight: 500;
-}
-
-.card__title--p {
+.card__title .caption {
+  font-size: var(--fs-xs-1);
   color: var(--grey-4);
-  font-size: var(--fs-xxs-2);
-  font-weight: 400;
 }
 
 .card__content {
