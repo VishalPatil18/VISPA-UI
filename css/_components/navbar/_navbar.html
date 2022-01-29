@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+  <title>Navbar</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+  </style>
+</head>
+<body class="poppins">
+  <!-- BASIC -->
+  <header class="navbar">
+    <img class="icon-lg icon-light" src="../../../assets/linux.svg" alt="logo">
+    <span class="navbar__text">LINUX</span>
+    <ul class="navbar__list">
+      <li class="button btn-plain navbar__btn">Home</li>
+      <li class="button btn-plain navbar__btn">About</li>
+      <li class="button btn-plain navbar__btn navbar__btn--active">Blogs</li>
+      <li class="button btn-plain navbar__btn">Contact</li>
+      <li class="button btn-plain navbar__btn">Feedback</li>
+    </ul>
+    <div class="input input__icons navbar__search">
+      <input class="input__field--text search" type="text" placeholder="Search...">
+    </div>
+  </header>
+
+  <!-- W/ICONS -->
+  <header class="navbar nb__icons">
+    <img class="icon-lg" src="../../../assets/linux.svg" alt="logo">
+    <span class="navbar__text">LINUX</span>
+    <div class="input input__icons navbar__search">
+      <input class="input__field--text search" type="text" placeholder="Search...">
+    </div>
+    <ul class="navbar__list">
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/home.svg" alt="home-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/flag.svg" alt="flag-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/video.svg" alt="video-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/shopping-bag.svg" alt="cart-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/users.svg" alt="users-btn"></li>
+    </ul>
+    <ul class="navbar__list">
+      <li class="navbar__btn navbar__user"><img class="profile__img icon-lg" src="../../../assets/profile_dark.png" alt="profile">Bablu</li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/plus-circle.svg" alt="add-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/comments.svg" alt="chats-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/bell.svg" alt="noti-btn"></li>
+      <li class="navbar__btn"><img class="icon-md icon-dark" src="../../../assets/arrow-alt-circle-down.svg" alt="menu"></li>
+    </ul>
+  </header>
+</body>
+</html>
