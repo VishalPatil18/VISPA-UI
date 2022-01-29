@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+  <title>Toast</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="poppins">
+  <!-- BASIC -->
+  <div class="toast toast__basic">
+    <p class="toast__content">Can't send photo. Retry in 5 seconds.</p>
+  </div>
+
+  <!-- INPUT -->
+  <div class="toast toast__input tst--primary tst" id="baseline-toast">
+    <img class="icon-xl toast__icon" src="../../../assets/user.svg" alt="danger-icon">
+    <div class="input toast__content">
+      <p>Please enter your name*</p>
+      <input class="input__field--text toast__content--input" type="text">
+    </div>
+    <img class="icon-md toast__icon--btn icon-primary" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- ICONS -->
+  <!-- PRIMARY -->
+  <div class="toast tst--primary" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/info.svg" alt="warning-icon">
+    <p class="toast__content">Bablu and 22 others followed you!</p>
+    <img class="icon-md toast__icon--btn toast__close icon-primary" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- DANGER -->
+  <div class="toast tst--danger" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/ban.svg" alt="danger-icon">
+    <p class="toast__content">Can't send photo. Retry in 5 seconds.</p>
+    <img class="icon-md toast__icon--btn icon-danger" src="../../../assets/redo.svg" alt="retry-btn">
+    <img class="icon-md toast__icon--btn icon-danger" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- SUCCESS -->
+  <div class="toast tst--success" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/check.svg" alt="success-icon">
+    <p class="toast__content">Transaction Successful!</p>
+    <img class="icon-md toast__icon--btn icon-success" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- WARNING -->
+  <div class="toast tst--warning" id="baseline-toast">
+    <img class="icon-lg toast__icon" src="../../../assets/warning.svg" alt="warning-icon">
+    <p class="toast__content">Can't send photo. Retry in 5 seconds.</p>
+    <img class="icon-md toast__icon--btn icon-warning" src="../../../assets/redo.svg" alt="retry-btn">
+    <img class="icon-md toast__icon--btn icon-warning" src="../../../assets/close.svg" alt="close-btn">
+  </div>
+
+  <!-- STACKED -->
+  <div class="toast toast__stacked tst--danger">
+    <p class="toast__content">This item already has the label "travel". You can add a new label.</p>
+    <div class="toast__button--wrapper">
+      <a class="button btn-plain btn-sm btn-dark">ADD A NEW LABEL</a>
+      <a class="button btn-plain btn-dark btn-sm">CLOSE</a>
+    </div>
+  </div>
+</body>
+</html>

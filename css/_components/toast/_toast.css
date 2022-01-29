@@ -1,0 +1,153 @@
+.toast {
+  align-items: center;
+  background-color: white;
+  border: 1px solid var(--dark);
+  box-shadow: var(--bs-xs);
+  color: var(--dark);
+  display: flex;
+  font-size: var(--fs-xs-1);
+  font-weight: 300;
+  position: relative;
+  width: min(500px, 90%);
+}
+
+.toast:hover {
+  box-shadow: var(--bs-md);
+  transition: 0.2s ease-in;
+}
+
+.toast__content {
+  flex-shrink: 1;
+  margin-left: var(--space-sm);
+}
+
+.toast__icon {
+  box-sizing: content-box;
+  padding: 2rem;
+}
+
+.toast__icon--btn {
+  cursor: pointer;
+  margin: 0 var(--space-xs);
+}
+
+.toast img:nth-of-type(2n) {
+  margin-left: auto;
+}
+
+.toast img:last-child {
+  margin-right: var(--space-sm);
+}
+
+/* BASIC */
+.toast__basic {
+  background-color: var(--light);
+  justify-content: center;
+}
+
+.toast__basic .toast__content{
+  justify-content: center;
+  margin-left: 0px;
+  padding: var(--space-md);
+}
+
+/* INPUT */
+.toast__input .toast__content--input{
+  width: 75%;
+}
+
+.toast__input .toast__icon {
+  height: 48%;
+}
+
+.toast__input .toast__close {
+  margin-left: auto;
+}
+
+/* STACKED */
+.toast__stacked {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.toast__stacked .toast__content {
+  flex-basis: 100%;
+  font-size: var(--fs-xs-1);
+  padding: var(--pd-sm);
+}
+
+.toast__button--wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--pd-sm);
+  width: 100%;
+}
+
+.toast__stacked .toast__content {
+  margin-left: 0;
+}
+
+.toast__button--wrapper .toast__button:hover {
+  background-color: var(--tertiary);
+}
+
+/* DANGER */
+.tst--danger {
+  background-color: white;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.tst--danger .toast__icon {
+  background-color: var(--danger);
+}
+
+.tst--danger .toast__button {
+  color: var(--danger);
+}
+
+/* SUCCESS */
+.tst--success {
+  background-color: white;
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.tst--success .toast__icon {
+  background-color: var(--success);
+}
+
+.tst--success .toast__button {
+  color: var(--success);
+}
+
+/* PRIMARY */
+.tst--primary {
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.tst--primary .toast__icon {
+  background-color: var(--primary);
+}
+
+.tst--primary .toast__button {
+  color: var(--primary);
+}
+
+/* WARNING */
+.tst--warning {
+  background-color: white;
+  border: 1px solid var(--warning);
+  color: var(--warning);
+}
+
+.tst--warning .toast__icon {
+  background-color: var(--warning);
+}
+
+.tst--warning .toast__button {
+  color: var(--warning);
+}

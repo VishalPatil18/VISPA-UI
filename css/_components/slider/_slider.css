@@ -1,0 +1,131 @@
+.slider__container {
+  width: 100%;
+}
+
+.slider {
+  background: var(--dark);
+  border-radius: var(--br-full);
+  cursor: pointer;
+  height: 6px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.slider::-webkit-slider-thumb {
+  background: var(--primary);
+  border-radius: var(--br-full); 
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.slider::-moz-range-thumb {
+  background: var(--primary);
+  border-radius: var(--br-full); 
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+/* SMALL */
+.sl-sm .slider::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+}
+
+.sl-sm .slider::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+}
+
+/* MEDIUM */
+.sl-md .slider::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+}
+
+.sl-md .slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+}
+
+/* LARGE */
+.sl-lg .slider::-webkit-slider-thumb {
+  height: 26px;
+  width: 26px;
+}
+
+.sl-lg .slider::-moz-range-thumb {
+  height: 26px;
+  width: 26px;
+}
+
+/* SQUARE */
+.sl-square .slider::-webkit-slider-thumb {
+  border-radius: 5px;
+}
+
+.sl-square .slider::-moz-range-thumb {
+  border-radius: 5px;
+}
+
+/* PRIMARY */
+.sl-primary .slider {
+  background: var(--primary);
+}
+.sl-primary .slider::-webkit-slider-thumb {
+  background: black;
+}
+
+.sl-primary .slider::-moz-range-thumb {
+  background: black;
+}
+
+/* SUCCESS */
+.sl-success .slider {
+  background: var(--success);
+}
+.sl-success .slider::-webkit-slider-thumb {
+  background: black;
+}
+
+.sl-success .slider::-moz-range-thumb {
+  background: black;
+}
+
+/* DANGER */
+.sl-danger .slider {
+  background: var(--danger);
+}
+.sl-danger .slider::-webkit-slider-thumb {
+  background: black;
+}
+
+.sl-danger .slider::-moz-range-thumb {
+  background: black;
+}
+
+/* WARNING */
+.sl-warning .slider {
+  background: var(--warning);
+}
+.sl-warning .slider::-webkit-slider-thumb {
+  background: black;
+}
+
+.sl-warning .slider::-moz-range-thumb {
+  background: black;
+}
+
+/* DARK */
+.sl-dark .slider {
+  background: var(--dark);
+}
+.sl-dark .slider::-webkit-slider-thumb {
+  background: var(--grey-4);
+}
+
+.sl-dark .slider::-moz-range-thumb {
+  background: black;
+}
