@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+  <title>Input</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 120vh;
+      padding: 0 5%;
+    }    
+  </style>
+</head>
+<body class="poppins">
+  <!-- BASIC -->
+  <div class="input">
+    <label class="input__label">Username *</label>	
+    <input class="input__field--text" type="text">
+  </div>
+  <div class="input inp__error">
+    <label class="input__label">Password *</label>
+    <input class="input__field--text" type="text">
+    <div class="inp__error--msg">
+        Wrong Password! Please Try again.
+    </div>
+  </div>
+
+  <!-- RADIO -->
+  <div class="radio">
+    <label class="radio__label" for="checked-radio">
+      <input class="input__field--radio" id="checked-radio" name="checked" type="radio" checked>
+      Checked
+    </label>
+    
+    <label class="radio__label" for="unchecked-radio">
+      <input class="input__field--radio" id="unchecked-radio" name="unchecked" type="radio">
+      Unchecked
+    </label>
+    
+    <label class="radio__label disabled" for="disabled-radio">
+      <input class="input__field--radio disabled__input" id="disabled-radio" name="disabled" type="radio" disabled>
+      Disabled
+    </label>
+  </div>
+
+  <!-- CHECKBOX -->
+  <div class="checkbox">
+    <label class="radio__label" for="checked-box">
+      <input class="input__field--checkbox" id="checked-box" name="checked" type="checkbox" checked>
+      Checked
+    </label>
+    
+    <label class="radio__label" for="unchecked-box">
+      <input class="input__field--checkbox" id="unchecked-box" name="unchecked" type="checkbox">
+      Unchecked   
+    </label>
+    
+    <label class="radio__label disabled" for="disabled-box">
+      <input class="input__field--checkbox disabled__input" id="disabled-box" name="disabled" type="checkbox" disabled>
+      Disabled
+    </label>
+  </div>
+
+  <!-- W/ICONS -->
+  <div class="input input__icons">
+    <label class="input__label">Email</label>	
+    <input class="input__field--text email" type="text" placeholder="bablu_tailor@gmail.com">
+
+    <label class="input__label">Password</label>	
+    <input class="input__field--text password" type="text" placeholder="********">
+  </div>
+
+  <!-- SEARCH -->
+  <div class="input input__icons">
+    <input class="input__field--text search" type="text" placeholder="Search...">
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="input input__icons input__premium">
+    <div class="input__username">
+      <input class="input__field--text user" type="text" placeholder="bablu_tailor">
+      <label class="input__label">Username</label>
+    </div>
+
+    <div class="input__email">
+      <input class="input__field--text email" type="text" placeholder="bablu_tailor@gmail.com">
+      <label class="input__label">Email</label>	
+    </div>
+
+    <div class="input__password">
+      <input class="input__field--text password" type="text" placeholder="********">
+      <label class="input__label">Password</label>
+    </div>
+  </div>
+</body>
+</html>

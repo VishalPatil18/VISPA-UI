@@ -1,0 +1,128 @@
+.input {
+  color: var(--dark);
+  font-size: var(--fs-xs-1);
+  line-height: 20px;
+  width: 100%;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: var(--space-xxs);
+}
+
+.input__field--text {
+  background-color: var(--light);
+  border: 1px solid var(--grey-2);
+  font-size: var(--fs-xs-1);
+  margin: var(--space-xxs) 0;
+  outline: none;
+  padding: var(--pd-xs);
+  width: 100%;
+}
+
+.input .input__field--text:focus{
+  border: 1px solid var(--dark)
+}
+
+/* ERROR INPUT */
+.inp__error .input__label{
+  color: var(--danger);
+}
+
+.inp__error .input__field--text{
+  border: 1px solid var(--danger);
+}
+
+.inp__error .input__field--text:focus{
+  border: 1px solid var(--danger);
+}
+
+.inp__error--msg {
+  color: var(--danger);
+}
+
+/* RADIO */
+.radio__label {
+  font-size: var(--fs-xs-1);
+}
+
+.label__disabled {
+  color: var(--grey-3);
+}
+
+.input__field--radio, .input__field--checkbox {
+  cursor: pointer;
+  margin: 0 var(--space-xxs);
+}
+
+.radio .disabled, .checkbox .disabled{
+  color: var(--grey-4);
+  cursor: not-allowed;
+}
+
+.radio .disabled__input, .checkbox .disabled__input{
+  cursor: not-allowed;
+}
+
+/* W/ICONS */
+.input__icons .input__field--text {
+  background-position: var(--space-xs);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+
+.email {
+  background-image: url('../../../assets/envelope.svg');
+}
+
+.password {
+  background-image: url('../../../assets/lock.svg');
+}
+
+.search {
+  background-image: url('../../../assets/search.svg');
+}
+
+.user {
+  background-image: url('../../../assets/user.svg');
+}
+
+/* PREMIUM */
+.input__premium .input__field--text {
+  background-color: white;
+  border: 1px solid var(--primary);
+  border-radius: var(--br-xxxl);
+  line-height: 30px;
+}
+
+.input__username, .input__email, .input__password {
+  position: relative;
+}
+
+.input__username .input__label,
+.input__email .input__label,
+.input__password .input__label {
+  position: absolute;
+  background-color: white;
+  color: var(--primary);
+  font-size: var(--fs-xxs-2);
+  padding: 0px 5px;
+  margin: 0px 10px;
+  line-height: 16px;
+}
+
+.input__username .input__label {
+  top: 0px;
+  left: 20px;
+}
+
+.input__email .input__label {
+  top: 0px;
+  left: 20px;
+}
+
+.input__password .input__label {
+  top: 0px;
+  left: 20px;
+}

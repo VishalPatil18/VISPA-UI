@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 250vh;
+      padding: 0 20%;
+    }
+  </style>
+  <title>List</title>
+</head>
+<body class="poppins">
+  <!-- BASIC -->
+  <ul class="list">
+    <li class="list__item">🥭 Mango</li>
+    <li class="list__item">🍌 Banana</li>
+    <li class="list__item">🍎 Apple</li>
+    <li class="list__item">🍇 Grapes</li>
+  </ul>
+
+  <!-- CHECKBOX -->
+  <ul class="list checkbox">
+    <li class="list__item">
+      <label for="mango">
+        <input class="input__field--checkbox" id="mango" name="mango" type="checkbox" checked>
+        Mango
+      </label>
+    </li>
+    <li class="list__item">
+      <label for="apple">
+        <input class="input__field--checkbox" id="apple" name="apple" type="checkbox" checked>
+        Apple
+      </label>
+    </li>
+    <li class="list__item">
+      <label for="grapes">
+        <input class="input__field--checkbox" id="grapes" name="grapes" type="checkbox">
+        Grapes   
+      </label>
+    </li>
+    <li class="list__item">
+      <label for="banana">
+        <input class="input__field--checkbox" id="banana" name="banana" type="checkbox">
+        Banana   
+      </label>
+    </li>
+    <li class="list__item">
+      <label class="disabled" for="watermelon">
+        <input class="input__field--checkbox disabled__input" id="watermelon" name="watermelon" type="checkbox" disabled>
+        Watermelon
+      </label>
+    </li>
+  </ul>
+
+  <!-- NESTED -->
+  <ul class="list">
+    <li class="list__item">
+      Australia
+    </li>
+    <li class="list nested__list">
+      India
+      <ul class="list nested__list">
+        <li class="list__item">Delhi</li>
+        <li class="list__item">Mumbai</li>
+        <li class="list__item">Kolkata</li>
+        <li class="list__item">Chennai</li>
+        <li class="list__item">Bangalore</li>
+      </ul>
+    </li>
+    <li class="list__item">
+      USA
+    </li>
+    <li class="list__item">
+      South Africa
+    </li>
+  </ul>
+
+  <!-- STACKED NOTIFICATION -->
+  <ul class="list li__stacked">
+    <li class="list__item">
+      <div class="alert al-solid-primary">
+        <span class="alert__text">This is a Basic Solid Primary Alert!</span>
+      </div>
+    </li>
+    <li class="list__item">
+      <div class="alert al-wicon al-primary">
+        <img class="icon-sm icon-primary" src="../../../assets/info.svg" alt="info-icon">
+        <span class="alert__text">This is a Primary Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-primary" src="../../../assets/close.svg" alt="close-icon">
+      </div>
+    </li>
+    <li class="list__item">
+      <div class="alert al-wicon al-solid-success">
+        <img class="icon-sm icon-light" src="../../../assets/check.svg" alt="check-icon">
+        <span class="alert__text">This is a Solid Success Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg" alt="close-icon">
+      </div>
+    </li>
+    <li class="list__item">
+      <div class="alert al-wicon al-solid-warning">
+        <img class="icon-sm icon-dark" src="../../../assets/warning.svg" alt="warning-icon">
+        <span class="alert__text">This is a Solid Warning Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-dark" src="../../../assets/close.svg" alt="close-icon">
+      </div>
+    </li>
+    <li class="list__item"><div class="alert al-wicon al-solid-danger">
+        <img class="icon-sm icon-light" src="../../../assets/ban.svg" alt="ban-icon">
+        <span class="alert__text">This is a Solid Danger Alert - Check it now!</span>
+        <img class="icon-sm alert__icon--right icon-light" src="../../../assets/close.svg" alt="close-icon">
+      </div>
+    </li>
+  </ul>
+
+  <!-- PREMIUM LIST MENU -->
+  <ul class="list li__premium">
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/home.svg" alt="home-btn"> Home</li>
+    <li class="list__item list__item--active"><img class="icon-md list__icon icon-primary" src="../../../assets/user.svg" alt="profile-btn"> Profile</li>
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/comment.svg" alt="message-btn"> Messages</li>
+    <li class="list__item"><img class="icon-md list__icon icon-dark" src="../../../assets/cog.svg" alt="settings-btn"> Settings</li>
+  </ul>
+</body>
+</html>
