@@ -20,6 +20,11 @@
   min-width: 350px;
 }
 
+.modal__title {
+  border-top-left-radius: var(--br-sm);
+  border-top-right-radius: var(--br-sm);
+}
+
 .modal__footer {
   display: flex;
   justify-content: flex-end;
@@ -35,13 +40,13 @@
 }
 
 /* W/ICONS */
-.modal__icons {
+.mdl__icons {
   padding: 0;
 }
 
-.modal__icons .modal__title,
-.modal__icons .modal__body,
-.modal__icons .modal__footer {
+.mdl__icons .modal__title,
+.mdl__icons .modal__body,
+.mdl__icons .modal__footer {
   padding: var(--pd-sm);
 }
 
@@ -49,7 +54,7 @@
   background-color: initial;
 }
 
-.modal__icons .modal__title {
+.mdl__icons .modal__title {
   align-items: center;
   border-bottom: 1px solid var(--grey-1);
   display: flex;
@@ -61,56 +66,46 @@
 }
 
 /* PRIMARY */
-.md-primary .modal__title {
+.mdl-primary .modal__title {
   background-color: var(--primary);
-  border-top-left-radius: var(--br-sm);
-  border-top-right-radius: var(--br-sm);
   color: white;
 }
 
 /* SUCCESS */
-.md-success .modal__title {
+.mdl-success .modal__title {
   background-color: var(--success);
-  border-top-left-radius: var(--br-sm);
-  border-top-right-radius: var(--br-sm);
   color: white;
 }
 
 /* DANGER */
-.md-danger .modal__title {
+.mdl-danger .modal__title {
   background-color: var(--danger);
-  border-top-left-radius: var(--br-sm);
-  border-top-right-radius: var(--br-sm);
   color: white;
 }
 
 /* WARNING */
-.md-warning .modal__title {
+.mdl-warning .modal__title {
   background-color: var(--warning);
-  border-top-left-radius: var(--br-sm);
-  border-top-right-radius: var(--br-sm);
   color: var(--dark);
 }
 
 /* DARK */
-.md-dark .modal__title {
+.mdl-dark .modal__title {
   background-color: var(--dark);
-  border-top-left-radius: var(--br-sm);
-  border-top-right-radius: var(--br-sm);
   color: white;
 }
 
 /* SHARE MODAL */
-.modal__share {
+.mdl__share {
   width: fit-content;
 }
 
-.modal__share .modal__body {
+.mdl__share .modal__body {
   display: flex;
   flex-direction: column;
 }
 
-.modal__share .modal__body--btn-cntr {
+.mdl__share .modal__body--btn-cntr {
   align-items: center;
   display: flex;
   gap: var(--space-sm);
@@ -129,7 +124,7 @@
   padding: var(--space-xxxs);
 }
 
-.modal__share .modal__footer {
+.mdl__share .modal__footer {
   margin-top: 0px;
 }
 
