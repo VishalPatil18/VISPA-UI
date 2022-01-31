@@ -136,6 +136,25 @@
   margin-right: 0;
 }
 
+/* PLAIN ICON */
+.btn-plain-icon {
+  align-items: center;
+  background-color: initial;
+  border-radius: var(--br-full);
+  box-shadow: initial;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.btn-plain-icon .button__icon {
+  margin-right: initial;
+}
+
+.btn-plain-icon:hover {
+  background-color: var(--grey-1);
+}
+
 /* OUTLINE */
 .btn-outline-primary {
   border: 2px solid var(--primary);

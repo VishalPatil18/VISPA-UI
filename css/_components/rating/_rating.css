@@ -1,0 +1,10 @@
+.rating {
+  display: flex;
+  gap: var(--space-xs);
+  padding: var(--pd-sm);
+  width: fit-content;
+}
+
+.rating__icon:hover {
+  cursor: pointer;
+}

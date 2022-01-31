@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+  <title>Rating</title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="rating">
+    <img class="icon-xl rating__icon" src="../../../assets/star.svg" alt="star">
+    <img class="icon-xl rating__icon" src="../../../assets/star.svg" alt="star">
+    <img class="icon-xl rating__icon" src="../../../assets/star.svg" alt="star">
+    <img class="icon-xl rating__icon" src="../../../assets/star.svg" alt="star">
+    <img class="icon-xl rating__icon" src="../../../assets/star.svg" alt="star">
+  </div>
+</body>
+
+<script>
+  const stars = [...document.getElementsByClassName("rating__icon")];
+
+  function ratingHandler(stars) {
+    const starOutline = "../../../assets/star.svg";
+    const starSolid = "../../../assets/star-solid.svg";
+    stars.map((star) => {
+      star.onclick = () => {
+        let i = stars.indexOf(star);
+        if(star.attributes.src.nodeValue === starOutline) {
+          for (i; i >= 0; --i){
+            stars[i].attributes.src.nodeValue = starSolid;
+            stars[i].classList.add("icon-warning");
+          }
+        } else {
+          for (i; i < stars.length; ++i){
+            stars[i].attributes.src.nodeValue = starOutline;
+            stars[i].classList.remove("icon-warning");
+          }
+        }
+      };
+    });
+  }
+  ratingHandler(stars);
+
+</script>
+
+</html>

@@ -1,0 +1,134 @@
+.modal__container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.modal {
+  background-color: white;
+  border-radius: var(--br-sm);
+  box-shadow: var(--bs-md);
+  flex-direction: column;
+  padding: var(--pd-sm);
+  width: min(85%, 500px);
+  min-width: 350px;
+}
+
+.modal__title {
+  border-top-left-radius: var(--br-sm);
+  border-top-right-radius: var(--br-sm);
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal__footer--btn {
+  margin-right: var(--space-sm);
+}
+
+.modal__footer--btn:last-child {
+  margin-right: 0;
+}
+
+/* W/ICONS */
+.mdl__icons {
+  padding: 0;
+}
+
+.mdl__icons .modal__title,
+.mdl__icons .modal__body,
+.mdl__icons .modal__footer {
+  padding: var(--pd-sm);
+}
+
+.modal__title--close:hover {
+  background-color: initial;
+}
+
+.mdl__icons .modal__title {
+  align-items: center;
+  border-bottom: 1px solid var(--grey-1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__icon .modal__footer {
+  margin-top: 0px;
+}
+
+/* PRIMARY */
+.mdl-primary .modal__title {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* SUCCESS */
+.mdl-success .modal__title {
+  background-color: var(--success);
+  color: white;
+}
+
+/* DANGER */
+.mdl-danger .modal__title {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* WARNING */
+.mdl-warning .modal__title {
+  background-color: var(--warning);
+  color: var(--dark);
+}
+
+/* DARK */
+.mdl-dark .modal__title {
+  background-color: var(--dark);
+  color: white;
+}
+
+/* SHARE MODAL */
+.mdl__share {
+  width: fit-content;
+}
+
+.mdl__share .modal__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdl__share .modal__body--btn-cntr {
+  align-items: center;
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-top: var(--space-sm);
+}
+
+.link__container {
+  align-items: center;
+  border-radius: var(--br-xs);
+  border: 1px solid var(--grey-1);
+  display: flex;
+  flex-grow: 1;
+  gap: var(--space-xs);
+  justify-content: space-between;
+  padding: var(--space-xxxs);
+}
+
+.mdl__share .modal__footer {
+  margin-top: 0px;
+}
+
+.modal__footer--link {
+  color: var(--grey-4);
+  font-size: var(--fs-xxs-2);
+}

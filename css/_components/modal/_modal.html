@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../main.css">
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  </style>
+  <title>Modal</title>
+</head>
+<body class="poppins">
+  <button class="button btn-solid-primary" id="open-modal-btn">Open Modal</button>
+
+  <div class="modal__container" id="modal-container">
+    <section class="modal mdl__basic" id="modal-el">
+      <header class="modal__title">
+        <h1 class="h-5">Modal Title</h1>
+      </header>
+      <main class="modal__body">
+        <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
+      </main>
+      <footer class="modal__footer">
+        <button class="button btn-solid-primary modal__footer--btn">ACTION 1</button>
+        <button class="button btn-outline-primary modal__footer--btn">ACTION 2</button>
+      </footer>
+    </section>
+
+    <!-- W/ICONS -->
+    <section class="modal mdl__icons mdl-primary" id="modal-el-wicons">
+      <header class="modal__title">
+        <h1 class="h-5">Modal Title</h1>
+        <button class="button btn-action btn-plain-icon modal__title--close" id="modal-close-btn"><img class="icon-light icon-lg button__icon" src="../../../assets/close.svg" alt="twitter"></button>
+      </header>
+      <main class="modal__body">
+        <p class="bd-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis, explicabo deleniti rerum.</p>
+      </main>
+      <footer class="modal__footer">
+        <button class="button btn-solid-primary modal__footer--btn">ACTION 1</button>
+        <button class="button btn-outline-primary modal__footer--btn">ACTION 2</button>
+      </footer>
+    </section>
+
+    <!-- SHARE LINK MODAL -->
+    <section class="modal mdl__icons mdl-primary mdl__share" id="modal-el-sharelink">
+      <header class="modal__title">
+        <h1 class="h-5">Share Modal</h1>
+        <button class="button btn-action btn-plain-icon modal__title--close" id="modal-close-btn"><img class="icon-light icon-lg button__icon" src="../../../assets/close.svg" alt="twitter"></button>
+      </header>
+      <main class="modal__body">
+        <p class="bd-5">Share the link via</p>
+        <div class="modal__body--btn-cntr">
+          <button class="button btn-socialmedia btn-solid-primary"><img class="icon-light icon-md button__icon" src="../../../assets/twitter.svg" alt="twitter"></button>
+
+          <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="../../../assets/facebook.svg" alt="facebook"></button>
+
+          <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon-md button__icon" src="../../../assets/instagram.svg" alt="instagram"></button>
+
+          <button class="button btn-socialmedia btn-solid-secondary"><img class="icon-light icon-md button__icon" src="../../../assets/linkedin.svg" alt="linkedin"></button>
+
+          <button class="button btn-socialmedia btn-solid-danger"><img class="icon-light icon-md button__icon" src="../../../assets/youtube.svg" alt="youtube"></button>
+        </div>
+      </main>
+      <footer class="modal__footer">
+        <div class="link__container">
+          <span class="modal__footer--link">example.com/share-this-link</span>
+          <button class="button btn-solid-primary modal__footer--btn">Copy</button>
+        </div>
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    const openModalBtn = document.getElementById("open-modal-btn");
+    const modalContainer = document.getElementById("modal-container");
+    const modalEl = document.getElementById("modal-el");
+    const modalCloseBtn = document.getElementById("modal-close-btn");
+    
+    openModalBtn.addEventListener("click", () => {
+      modalContainer.style.display = "flex";
+      modalEl.style.display = "flex";
+    });
+    
+    /* WITHOUT CLOSE ICON CLOSE FUNCTION */
+    window.addEventListener("click", e => {
+      if (e.target == modalContainer) {
+        modalContainer.style.display = "none";
+        modalEl.style.display = "none";
+      }
+    });
+    
+    /* ICON CLOSE FUNCTION */
+    modalCloseBtn.addEventListener("click", () => {
+      modalContainer.style.display = "none";
+      modalEl.style.display = "none";
+    })
+  </script>
+</body>
+
+
+</html>
