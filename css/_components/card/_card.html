@@ -12,7 +12,7 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      height: 300vh;
+      height: 400vh;
       justify-content: space-evenly;
     }
   </style>
@@ -33,6 +33,7 @@
   <div class="card">
     <div class="card__body">
       <img src="../../../assets/image.jpg" class="card__img" />
+      <img class="icon-lg icon-dark card__close-btn" src="../../../assets/times.svg" alt="close">
       <div class="card__title">
         <h1 class="h-5">Card Title</h1>
         <p class="caption">by Bablu Tailor</p>
@@ -125,9 +126,39 @@
         <div class="card__footer--right">
           <a><img class="icon-sm icon-light" src="../../../assets/heart.svg" /></a>
           <a><img class="icon-sm icon-light" src="../../../assets/comment.svg" /></a>
-          <a><img class="icon-sm icon-light" src="../../../assets/bookmark.svg" /></a>
           <a><img class="icon-sm icon-light" src="../../../assets/share.svg" /></a>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- E-COMMERCE CARD -->
+  <div class="card card__ecommerce">
+    <div class="card__body">
+      <div class="card__badge">
+        <img class="badge__icon icon-danger" src="../../../assets/bookmark.svg" />
+        <span class="card__discount">40% OFF</span>
+      </div>
+      <img src="../../../assets/image.jpg" class="card__img" />
+      <div class="card__title">
+        <h1 class="h-5">Item Title</h1>
+        <p class="caption">Item Category</p>
+      </div>
+      <div class="card__content">
+        <p class="bd-5">₹ <strike>5000</strike> <span class="card__content--newprice">3000</span> /-</p>
+        <button class="btn-solid-primary card__content--button">-</button>
+        <span class="st-1">2</span>
+        <button class="btn-solid-primary card__content--button">+</button>
+      </div>
+    </div>
+    <div class="card__footer">
+      <div class="card__footer--left">
+        <a class="card__button" href="#"><button class="button btn-sm btn-solid-success">Buy - ₹ 6000</button></a>
+      </div>
+      <div class="card__footer--right">
+        <a><img class="icon-sm icon-dark" src="../../../assets/heart.svg" /></a>
+        <a><img class="icon-sm icon-dark" src="../../../assets/share.svg" /></a>
+        <a><img class="icon-sm icon-dark" src="../../../assets/menu.svg" /></a>
       </div>
     </div>
   </div>

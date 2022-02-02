@@ -93,6 +93,21 @@
   transition: 0.2s ease-in;
 }
 
+.card__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  box-sizing: content-box;
+  border-radius: var(--br-full);
+}
+
+.card__close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in;
+}
+
 /* TITLE OVER IMAGE */
 .card__toimg .card {
   position: relative;
@@ -192,4 +207,55 @@
 
 .card__imgbg .card__footer--right {
   flex: 3;
+}
+
+/* E-COMMERCE CARD */
+.card__ecommerce .card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xxs);
+}
+
+.card__ecommerce .card__content--newprice {
+  color: var(--danger);
+  font-weight: var(--fw-900);
+  font-size: var(--fs-md-2);
+}
+
+.card__ecommerce .card__content--button {
+  border-radius: var(--br-full);
+  border: none;
+  font-size: var(--fs-xs-2);
+  height: 25px;
+  width: 25px;
+}
+
+.card__ecommerce .card__content--button:nth-child(2) {
+  margin-left: auto;
+}
+
+.card__ecommerce .card__footer--left {
+  flex: 4;
+}
+
+.card__badge {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+
+.badge__icon {
+  height: 60px;
+  width: 60px;
+}
+
+.card__discount {
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 0px;
+  font-size: var(--fs-xs-1);
+  font-weight: 900;
+  color: var(--light);
 }
