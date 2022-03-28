@@ -1,3 +1,7 @@
+.drawer {
+  width: 100%;
+}
+
 .drawer__list {
   font-size: var(--fs-xxs-2);
   list-style: none;
